@@ -1,0 +1,17 @@
+#page {
+    min-height: 300vh;
+    background-color: #1A1A1A;
+}
+
+.navigation {
+    position: sticky;
+    top: 40px;
+    left: 0;
+    right: 0;
+    display: flex;
+    margin: 0 40px;
+    border-radius: 15px;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+}
