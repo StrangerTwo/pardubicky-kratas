@@ -8,39 +8,38 @@ import Section from '../components/Section'
 import Footer from '../components/Footer'
 
 import Categories from '../components/Categories'
+import ApplicationPoints from '../components/ApplicationPoints'
 
 const HomePage = () => {
     
     return (
         <Layout>
             <PageHead/>
-            <Section>
-                <div className={style.sectionContent}>
-                    <h2 id="soutez">O Soutěži</h2>
-                    <p>
-                        Pardubický Kraťas je studentská filmová soutěž studentů středních škol a druhého stupně základních škol. 
-                        Cílem tohoto projektu je nejenom vytvoření regionální soutěže krátkých studentských filmů s celostátním přesahem,
-                        ale i snaha motivovat studenty k mediální tvůrčí činnosti a obohatit kulturní nabídku pardubického regionu. 
-                    </p>
-                </div>
+            <Section className={style.soutez}>
+                <h2 id="soutez">O Soutěži</h2>
+                <p>
+                    Pardubický Kraťas je studentská filmová soutěž studentů středních škol a druhého stupně základních škol. 
+                    Cílem tohoto projektu je nejenom vytvoření regionální soutěže krátkých studentských filmů s celostátním přesahem,
+                    ale i snaha <b>motivovat studenty k mediální tvůrčí činnosti</b> a <b>obohatit kulturní nabídku pardubického regionu</b>. 
+                </p>
             </Section>
-            <Section>
-                <div className={style.sectionTitle}>
-                    <h2 id="kategorie">Kategorie</h2>
+            <Section className={style.kategorie}>
+                <div className={style.triangle} >
+                    <h2 id="kategorie">Kategorie &amp; ceny</h2>
                 </div>
-                <div className={style.sectionContent}>
-                    <Categories />
-                </div>
+                <Categories />
             </Section>
             <div className={style.cameraPhoto}>
-                <div className={style.triangles} />
+                <div className={style.triangle} />
                 <div className={style.photo} />
-                <div className={style.triangles} />
+                <div className={style.triangle} />
             </div>
-            <Section>
-                <div className={style.sectionContent}>
+            <Section className={style.prihlaska}>
+                <div>
                     <h2 id="prihlaska">Přihláška</h2>
+                    <span>Vyplňme spolu přihlášku jednoduše ve třech krocích</span>
                 </div>
+                <ApplicationPoints />
             </Section>
             <Footer />
         </Layout>

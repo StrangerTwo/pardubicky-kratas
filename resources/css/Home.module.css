@@ -52,7 +52,7 @@
     height: 120%;
 }
 #pageHead .introduction {
-    padding: 0 30px 200px; 
+    padding: 0 100px 200px; 
 }
 #pageHead h1 {
     font-size: 2em;
@@ -60,20 +60,29 @@
 
 .section {
     position: relative;
+    padding: 60px 100px;
+    padding-bottom: 200px;
 }
 .section h2 {
     font-size: 4em;
+    letter-spacing: 2px;
 }
-.section p {
+
+.section.soutez {
+    background-color: #101010;
+}
+.section.soutez p {
     max-width: 60%;
     line-height: 3;
 }
-.sectionContent {
-    padding: 60px 30px;
-    padding-bottom: 200px;
+
+.section.kategorie {
+    background: #191919;
 }
-.sectionTitle {
+.section.kategorie .triangle {
     padding: 90px 30px 50px;
+    justify-content: flex-end;
+    background: linear-gradient(to bottom right, transparent 48%, #000 50%, #191919 50%);
     display: flex;
     position: absolute;
     bottom: 100%;
@@ -81,22 +90,22 @@
     right: 0;
 }
 
-.section:nth-of-type(1) .sectionContent {
-    background-color: #101010;
+.section.prihlaska {
+    background-color: #191919;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
 }
-
-.section:nth-of-type(2) .sectionContent{
-    background: #191919;
+.section.prihlaska h2 {
+    margin: 0;
+    margin-bottom: 15px;
 }
-section:nth-of-type(2) .sectionTitle {
-    justify-content: flex-end;
-    background: linear-gradient(to bottom right, transparent 48%, #000 50%, #191919 50%);
+.section.prihlaska div:first-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-
-.section:nth-of-type(3) .sectionContent {
-    background-color: #535353;
-}
-
 
 .categories {
     list-style: none;
@@ -105,7 +114,7 @@ section:nth-of-type(2) .sectionTitle {
 .categories li {
     position: relative;
     font-size: 2em;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 .categories li:first-child {
     margin-top: 0;
@@ -135,31 +144,32 @@ section:nth-of-type(2) .sectionTitle {
 
 .cameraPhoto {
     position: relative;
-    height: 1000px;
+    height: 700px;
     width: 100%;
 }
 .cameraPhoto img {
     height: 100%;
 }
-.cameraPhoto div.triangles {
+.cameraPhoto div.triangle {
     position: absolute;
     left: 0;
     right: 0;
-    height: 250px;
+    height: 200px;
 }
 .cameraPhoto div.photo {
     background-image: url(/images/camera.jpg);
     width: 100%;
     height: 100%;
     background-size: cover;
+    /* background-position: 100px 0px; */
 }
-.cameraPhoto div.triangles:nth-child(1) {
+.cameraPhoto div.triangle:nth-child(1) {
     top: 0;
     background: linear-gradient(to top right, transparent 45%, black 50%, #191919 50%);
 }
-.cameraPhoto div.triangles:nth-child(3) {
+.cameraPhoto div.triangle:nth-child(3) {
     bottom: 0;
-    background: linear-gradient(to bottom left, transparent 45%, black 50%, #535353 50%);
+    background: linear-gradient(to bottom left, transparent 45%, black 50%, #191919 50%);
 }
 
 .footer {
@@ -194,4 +204,18 @@ section:nth-of-type(2) .sectionTitle {
 .footer .question label, .footer .question input {
     display: block;
     width: 100%;
+}
+
+.applicationPoints {
+    list-style: decimal;
+    max-width: 40%;
+}
+.applicationPoints li {
+    margin-top: 100px;
+}
+.applicationPoints li:first-child {
+    margin-top: 0;
+}
+.applicationPoints li::marker, .applicationPoints span {
+    font-size: 2.5em;
 }
