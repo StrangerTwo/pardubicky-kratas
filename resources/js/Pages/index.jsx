@@ -5,6 +5,9 @@ import style from "../../css/Home.module.css"
 import Layout from '../Layouts/index'
 import PageHead from '../components/PageHead'
 import Section from '../components/Section'
+import Footer from '../components/Footer'
+
+import Categories from '../components/Categories'
 
 const HomePage = () => {
     
@@ -26,18 +29,21 @@ const HomePage = () => {
                     <h2>Kategorie</h2>
                 </div>
                 <div className={style.sectionContent}>
-                    <ul className={style.categories}>
-                        <li>
-                            <div className={style.categoryTitle}>Snímky studentů filmových škol do 21 let</div>
-                            <div className={style.categoryContent}>Text o XXXX</div>
-                        </li>
-                        <li>
-                            <div className={style.categoryTitle}>Juniorské filmové okénko</div>
-                            <div className={style.categoryContent}>Text o XXXX</div>
-                        </li>
-                    </ul>
+                    <Categories />
                 </div>
             </Section>
+            <div className={style.cameraPhoto}>
+                <div className={style.triangles} />
+                <div className={style.photo} />
+                <div className={style.triangles} />
+            </div>
+            <Section id="prihlaska">
+                <div className={style.sectionContent}>
+                    <h2>Přihláška</h2>
+                    <Categories />
+                </div>
+            </Section>
+            <Footer />
         </Layout>
     )
 }

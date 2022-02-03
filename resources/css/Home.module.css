@@ -68,3 +68,106 @@ section:nth-of-type(2) .sectionTitle {
     justify-content: flex-end;
     background: linear-gradient(to bottom right, transparent 50%, #191919 50%);
 }
+
+.section:nth-of-type(3) .sectionContent {
+    background-color: #535353;
+}
+
+
+.categories {
+    list-style: none;
+    color: #ACACAC;
+}
+.categories li {
+    position: relative;
+    font-size: 2em;
+    margin-top: 20px;
+}
+.categories li:first-child {
+    margin-top: 0;
+}
+.categories li::before {
+    position: absolute;
+    content: ">";
+    color: #474747;
+    transform: translateX(-150%);
+    transition: transform 300ms ease-out;
+}
+.categories li.open::before {
+    transform: translateX(-150%) rotate(90deg);
+}
+
+.categoryContent {
+    max-height: 0;
+    font-size: 0.6em;
+    transform: rotateX(90deg);
+    transform-origin: top center;
+    transition: max-height 300ms linear, transform 300ms ease-out;
+}
+.categories li.open .categoryContent {
+    max-height: 100px;
+    transform: rotateX(0deg);
+}
+
+.cameraPhoto {
+    position: relative;
+    height: 500px;
+    width: 100%;
+}
+.cameraPhoto img {
+    height: 100%;
+}
+.cameraPhoto div.triangles {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 200px;
+}
+.cameraPhoto div.triangles:nth-child(1) {
+    top: 0;
+    background: linear-gradient(to top right, transparent 48%, black 50%, #191919 50%);
+}
+.cameraPhoto div.photo {
+    background-image: url(/images/camera.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+.cameraPhoto div.triangles:nth-child(3) {
+    bottom: 0;
+    background: linear-gradient(to bottom right, transparent 48%, black 50%, #535353 50%);
+}
+
+.footer {
+    padding: 60px 100px;
+    background-color: #1D1D1D;
+}
+.footer > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.footer > div > div {
+    padding: 0 10px;
+}
+
+.map div {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3em;
+}
+
+.question .row {
+    display: flex;
+    gap: 2em;
+}
+.footer .question div {
+    width: 100%;
+}
+.footer .question label, .footer .question input {
+    display: block;
+    width: 100%;
+}
