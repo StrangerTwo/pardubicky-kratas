@@ -14,9 +14,9 @@ const HomePage = () => {
     return (
         <Layout>
             <PageHead/>
-            <Section id="soutez">
+            <Section>
                 <div className={style.sectionContent}>
-                    <h2>O Soutěži</h2>
+                    <h2 id="soutez">O Soutěži</h2>
                     <p>
                         Pardubický Kraťas je studentská filmová soutěž studentů středních škol a druhého stupně základních škol. 
                         Cílem tohoto projektu je nejenom vytvoření regionální soutěže krátkých studentských filmů s celostátním přesahem,
@@ -24,9 +24,9 @@ const HomePage = () => {
                     </p>
                 </div>
             </Section>
-            <Section id="kategorie">
+            <Section>
                 <div className={style.sectionTitle}>
-                    <h2>Kategorie</h2>
+                    <h2 id="kategorie">Kategorie</h2>
                 </div>
                 <div className={style.sectionContent}>
                     <Categories />
@@ -37,10 +37,9 @@ const HomePage = () => {
                 <div className={style.photo} />
                 <div className={style.triangles} />
             </div>
-            <Section id="prihlaska">
+            <Section>
                 <div className={style.sectionContent}>
-                    <h2>Přihláška</h2>
-                    <Categories />
+                    <h2 id="prihlaska">Přihláška</h2>
                 </div>
             </Section>
             <Footer />

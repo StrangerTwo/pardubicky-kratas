@@ -1,0 +1,25 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    color: #D1D1D1;
+    font-family: "Open Sans", "Helvetica Neue", sans-serif;
+    background-color: #171717;
+}
+
+::-webkit-scrollbar {
+    width:10px;
+}
+::-webkit-scrollbar-track {
+    background-color:#13111A;
+    border-radius:10px;
+}
+::-webkit-scrollbar-thumb {
+    background:purple;
+    border-radius:10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background:#cf0ecf;
+}

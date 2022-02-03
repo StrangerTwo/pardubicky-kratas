@@ -3068,20 +3068,20 @@ __webpack_require__.r(__webpack_exports__);
 var HomePage = function HomePage() {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)(_Layouts_index__WEBPACK_IMPORTED_MODULE_2__["default"], {
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components_PageHead__WEBPACK_IMPORTED_MODULE_3__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components_Section__WEBPACK_IMPORTED_MODULE_4__["default"], {
-      id: "soutez",
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
         className: _css_Home_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].sectionContent,
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("h2", {
+          id: "soutez",
           children: "O Sout\u011B\u017Ei"
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("p", {
           children: "Pardubick\xFD Kra\u0165as je studentsk\xE1 filmov\xE1 sout\u011B\u017E student\u016F st\u0159edn\xEDch \u0161kol a druh\xE9ho stupn\u011B z\xE1kladn\xEDch \u0161kol. C\xEDlem tohoto projektu je nejenom vytvo\u0159en\xED region\xE1ln\xED sout\u011B\u017Ee kr\xE1tk\xFDch studentsk\xFDch film\u016F s celost\xE1tn\xEDm p\u0159esahem, ale i snaha motivovat studenty k medi\xE1ln\xED tv\u016Fr\u010D\xED \u010Dinnosti a obohatit kulturn\xED nab\xEDdku pardubick\xE9ho regionu."
         })]
       })
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)(_components_Section__WEBPACK_IMPORTED_MODULE_4__["default"], {
-      id: "kategorie",
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
         className: _css_Home_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].sectionTitle,
         children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("h2", {
+          id: "kategorie",
           children: "Kategorie"
         })
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
@@ -3098,12 +3098,12 @@ var HomePage = function HomePage() {
         className: _css_Home_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].triangles
       })]
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components_Section__WEBPACK_IMPORTED_MODULE_4__["default"], {
-      id: "prihlaska",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
         className: _css_Home_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].sectionContent,
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("h2", {
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("h2", {
+          id: "prihlaska",
           children: "P\u0159ihl\xE1\u0161ka"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components_Categories__WEBPACK_IMPORTED_MODULE_6__["default"], {})]
+        })
       })
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components_Footer__WEBPACK_IMPORTED_MODULE_5__["default"], {})]
   });
@@ -3439,6 +3439,7 @@ var PageHead = function PageHead() {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
     id: _css_Home_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].pageHead,
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+      className: _css_Home_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].introduction,
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("h1", {
         children: "Pardubick\xFD kra\u0165as"
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("ul", {
@@ -3448,7 +3449,15 @@ var PageHead = function PageHead() {
           children: "Studentsk\xE1 filmov\xE1 sout\u011B\u017E, aneb \"Filmov\xE1 veselka na Delt\u011B\""
         })]
       })]
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {})]
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("img", {
+      className: _css_Home_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].logo,
+      src: "/images/logo.svg",
+      height: "250"
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("img", {
+      className: _css_Home_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].photographer,
+      src: "/images/photographer.jpg",
+      height: "600"
+    })]
   });
 };
 
@@ -3475,10 +3484,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var Section = function Section(_ref) {
-  var id = _ref.id,
-      children = _ref.children;
+  var children = _ref.children;
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("section", {
-    id: id,
     className: _css_Home_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].section,
     children: children
   });
@@ -3589,11 +3596,14 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".BxmifCdSGiStJUjUC64w-w\\=\\= {\r\n    position: fixed;\r\n    top: 0;\r\n    left: 0;\r\n    right: 0;\r\n    margin: 0 40px;\r\n    border-radius: 15px;\r\n    padding: 30px;\r\n    background-color: rgba(255, 255, 255, 0.1);\r\n    -webkit-backdrop-filter: blur(5px);\r\n            backdrop-filter: blur(5px);\r\n    transition: margin-top 150ms ease-in-out;\r\n    display: flex;\r\n    justify-content: space-between;\r\n    z-index: 1;\r\n}\r\n\r\n.BxmifCdSGiStJUjUC64w-w\\=\\= a {\r\n    text-decoration: none;\r\n    text-transform: uppercase;\r\n    color: #D1D1D1;\r\n    font-family: \"Open Sans\", \"Helvetica Neue\", sans-serif;\r\n    font-size: 1.5em;\r\n}\r\n\r\n#_81qgND4Y0wTd839QqpCQMA\\=\\= {\r\n    display: flex;\r\n    justify-content: space-between;\r\n    align-items: flex-end;\r\n    font-family: \"Open Sans\", \"Helvetica Neue\", sans-serif;\r\n    padding: 300px 30px 100px;\r\n}\r\n\r\n#_81qgND4Y0wTd839QqpCQMA\\=\\= h1 {\r\n    font-size: 2em;\r\n}\r\n\r\n.o1KMPmISP9FHXeYogR5X6A\\=\\= {\r\n    position: relative;\r\n}\r\n.o1KMPmISP9FHXeYogR5X6A\\=\\= h2 {\r\n    font-size: 4em;\r\n}\r\n.o1KMPmISP9FHXeYogR5X6A\\=\\= p {\r\n    max-width: 60%;\r\n    line-height: 3;\r\n}\r\n.IzhSP84DgTytS4UMLvuzqA\\=\\= {\r\n    padding: 60px 30px;\r\n    padding-bottom: 200px;\r\n}\r\n.rZ7mFDSkJH2UHdIqLMcTcw\\=\\= {\r\n    padding: 90px 30px 50px;\r\n    display: flex;\r\n    position: absolute;\r\n    bottom: 100%;\r\n    left: 0;\r\n    right: 0;\r\n}\r\n\r\n.o1KMPmISP9FHXeYogR5X6A\\=\\=:nth-of-type(1) .IzhSP84DgTytS4UMLvuzqA\\=\\= {\r\n    background-color: #101010;\r\n}\r\n\r\n.o1KMPmISP9FHXeYogR5X6A\\=\\=:nth-of-type(2) .IzhSP84DgTytS4UMLvuzqA\\=\\={\r\n    background: #191919;\r\n}\r\nsection:nth-of-type(2) .rZ7mFDSkJH2UHdIqLMcTcw\\=\\= {\r\n    justify-content: flex-end;\r\n    background: linear-gradient(to bottom right, transparent 50%, #191919 50%);\r\n}\r\n\r\n.o1KMPmISP9FHXeYogR5X6A\\=\\=:nth-of-type(3) .IzhSP84DgTytS4UMLvuzqA\\=\\= {\r\n    background-color: #535353;\r\n}\r\n\r\n\r\n.C5M4CNcK5snKuItdC3KHHA\\=\\= {\r\n    list-style: none;\r\n    color: #ACACAC;\r\n}\r\n.C5M4CNcK5snKuItdC3KHHA\\=\\= li {\r\n    position: relative;\r\n    font-size: 2em;\r\n    margin-top: 20px;\r\n}\r\n.C5M4CNcK5snKuItdC3KHHA\\=\\= li:first-child {\r\n    margin-top: 0;\r\n}\r\n.C5M4CNcK5snKuItdC3KHHA\\=\\= li::before {\r\n    position: absolute;\r\n    content: \">\";\r\n    color: #474747;\r\n    transform: translateX(-150%);\r\n    transition: transform 300ms ease-out;\r\n}\r\n.C5M4CNcK5snKuItdC3KHHA\\=\\= li.\\+Mausfg9yp68wnLVT6VqUw\\=\\=::before {\r\n    transform: translateX(-150%) rotate(90deg);\r\n}\r\n\r\n.FYGziG4-ux4R1SI49EozjQ\\=\\= {\r\n    max-height: 0;\r\n    font-size: 0.6em;\r\n    transform: rotateX(90deg);\r\n    transform-origin: top center;\r\n    transition: max-height 300ms linear, transform 300ms ease-out;\r\n}\r\n.C5M4CNcK5snKuItdC3KHHA\\=\\= li.\\+Mausfg9yp68wnLVT6VqUw\\=\\= .FYGziG4-ux4R1SI49EozjQ\\=\\= {\r\n    max-height: 100px;\r\n    transform: rotateX(0deg);\r\n}\r\n\r\n._3eocYWGTOEkHWeYY0c9lTw\\=\\= {\r\n    position: relative;\r\n    height: 500px;\r\n    width: 100%;\r\n}\r\n._3eocYWGTOEkHWeYY0c9lTw\\=\\= img {\r\n    height: 100%;\r\n}\r\n._3eocYWGTOEkHWeYY0c9lTw\\=\\= div.eJ14eeb\\+zkCvzx8\\+djVV7g\\=\\= {\r\n    position: absolute;\r\n    left: 0;\r\n    right: 0;\r\n    height: 200px;\r\n}\r\n._3eocYWGTOEkHWeYY0c9lTw\\=\\= div.eJ14eeb\\+zkCvzx8\\+djVV7g\\=\\=:nth-child(1) {\r\n    top: 0;\r\n    background: linear-gradient(to top right, transparent 48%, black 50%, #191919 50%);\r\n}\r\n._3eocYWGTOEkHWeYY0c9lTw\\=\\= div._350kCbbkWy6sZkTnmFOFvQ\\=\\= {\r\n    background-image: url(/images/camera.jpg);\r\n    width: 100%;\r\n    height: 100%;\r\n    background-size: cover;\r\n}\r\n._3eocYWGTOEkHWeYY0c9lTw\\=\\= div.eJ14eeb\\+zkCvzx8\\+djVV7g\\=\\=:nth-child(3) {\r\n    bottom: 0;\r\n    background: linear-gradient(to bottom right, transparent 48%, black 50%, #535353 50%);\r\n}\r\n\r\n.gDdrVymZwTd-7jOqNieqHw\\=\\= {\r\n    padding: 60px 100px;\r\n    background-color: #1D1D1D;\r\n}\r\n.gDdrVymZwTd-7jOqNieqHw\\=\\= > div {\r\n    display: grid;\r\n    grid-template-columns: 1fr 1fr 1fr;\r\n}\r\n.gDdrVymZwTd-7jOqNieqHw\\=\\= > div > div {\r\n    padding: 0 10px;\r\n}\r\n\r\n.dsl8OVt\\+2yevQZ2GO0uM8Q\\=\\= div {\r\n    width: 100%;\r\n    height: 100%;\r\n    background-color: #fff;\r\n    display: flex;\r\n    align-items: center;\r\n    justify-content: center;\r\n    font-size: 3em;\r\n}\r\n\r\n.QgGC919fhbKa-XnSyHH92g\\=\\= .NfCdK9EAHvoGJofe4-H\\+tQ\\=\\= {\r\n    display: flex;\r\n    gap: 2em;\r\n}\r\n.gDdrVymZwTd-7jOqNieqHw\\=\\= .QgGC919fhbKa-XnSyHH92g\\=\\= div {\r\n    width: 100%;\r\n}\r\n.gDdrVymZwTd-7jOqNieqHw\\=\\= .QgGC919fhbKa-XnSyHH92g\\=\\= label, .gDdrVymZwTd-7jOqNieqHw\\=\\= .QgGC919fhbKa-XnSyHH92g\\=\\= input {\r\n    display: block;\r\n    width: 100%;\r\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".BxmifCdSGiStJUjUC64w-w\\=\\= {\r\n    position: fixed;\r\n    top: 0;\r\n    left: 0;\r\n    right: 0;\r\n    margin: 0 40px;\r\n    border-radius: 15px;\r\n    padding: 30px;\r\n    background-color: rgba(255, 255, 255, 0.1);\r\n    -webkit-backdrop-filter: blur(5px);\r\n            backdrop-filter: blur(5px);\r\n    transition: margin-top 150ms ease-in-out;\r\n    display: flex;\r\n    justify-content: space-between;\r\n    z-index: 1;\r\n}\r\n\r\n.BxmifCdSGiStJUjUC64w-w\\=\\= a {\r\n    text-decoration: none;\r\n    text-transform: uppercase;\r\n    color: #D1D1D1;\r\n    font-family: \"Open Sans\", \"Helvetica Neue\", sans-serif;\r\n    font-size: 1.5em;\r\n}\r\n\r\n#_81qgND4Y0wTd839QqpCQMA\\=\\= {\r\n    position: relative;\r\n    display: flex;\r\n    align-items: flex-end;\r\n    padding: 300px 0 0;\r\n}\r\n#_81qgND4Y0wTd839QqpCQMA\\=\\=::after {\r\n    content: \"\";\r\n    position: absolute;\r\n    display: block;\r\n    bottom: 0;\r\n    left: 0;\r\n    width: 100%;\r\n    height: 10px;\r\n    background: linear-gradient(to bottom, transparent, #000);\r\n}\r\n#_81qgND4Y0wTd839QqpCQMA\\=\\= ._0JNDASaNU7luPr8VtjOoBA\\=\\= {\r\n    position: absolute;\r\n    bottom: 0;\r\n    left: 0;\r\n    height: 300px;\r\n    transform: translate(-80px, 100px);\r\n}\r\n#_81qgND4Y0wTd839QqpCQMA\\=\\= .aEFBtppUxWy6yL-gvOANeQ\\=\\= {\r\n    position: absolute;\r\n    top: 0;\r\n    right: 0;\r\n    height: 120%;\r\n}\r\n#_81qgND4Y0wTd839QqpCQMA\\=\\= .cbXU7bztyJU6X5xSM\\+7wSg\\=\\= {\r\n    padding: 0 30px 200px; \r\n}\r\n#_81qgND4Y0wTd839QqpCQMA\\=\\= h1 {\r\n    font-size: 2em;\r\n}\r\n\r\n.o1KMPmISP9FHXeYogR5X6A\\=\\= {\r\n    position: relative;\r\n}\r\n.o1KMPmISP9FHXeYogR5X6A\\=\\= h2 {\r\n    font-size: 4em;\r\n}\r\n.o1KMPmISP9FHXeYogR5X6A\\=\\= p {\r\n    max-width: 60%;\r\n    line-height: 3;\r\n}\r\n.IzhSP84DgTytS4UMLvuzqA\\=\\= {\r\n    padding: 60px 30px;\r\n    padding-bottom: 200px;\r\n}\r\n.rZ7mFDSkJH2UHdIqLMcTcw\\=\\= {\r\n    padding: 90px 30px 50px;\r\n    display: flex;\r\n    position: absolute;\r\n    bottom: 100%;\r\n    left: 0;\r\n    right: 0;\r\n}\r\n\r\n.o1KMPmISP9FHXeYogR5X6A\\=\\=:nth-of-type(1) .IzhSP84DgTytS4UMLvuzqA\\=\\= {\r\n    background-color: #101010;\r\n}\r\n\r\n.o1KMPmISP9FHXeYogR5X6A\\=\\=:nth-of-type(2) .IzhSP84DgTytS4UMLvuzqA\\=\\={\r\n    background: #191919;\r\n}\r\nsection:nth-of-type(2) .rZ7mFDSkJH2UHdIqLMcTcw\\=\\= {\r\n    justify-content: flex-end;\r\n    background: linear-gradient(to bottom right, transparent 48%, #000 50%, #191919 50%);\r\n}\r\n\r\n.o1KMPmISP9FHXeYogR5X6A\\=\\=:nth-of-type(3) .IzhSP84DgTytS4UMLvuzqA\\=\\= {\r\n    background-color: #535353;\r\n}\r\n\r\n\r\n.C5M4CNcK5snKuItdC3KHHA\\=\\= {\r\n    list-style: none;\r\n    color: #ACACAC;\r\n}\r\n.C5M4CNcK5snKuItdC3KHHA\\=\\= li {\r\n    position: relative;\r\n    font-size: 2em;\r\n    margin-top: 20px;\r\n}\r\n.C5M4CNcK5snKuItdC3KHHA\\=\\= li:first-child {\r\n    margin-top: 0;\r\n}\r\n.C5M4CNcK5snKuItdC3KHHA\\=\\= li::before {\r\n    position: absolute;\r\n    content: \">\";\r\n    color: #474747;\r\n    transform: translateX(-150%);\r\n    transition: transform 300ms ease-out;\r\n}\r\n.C5M4CNcK5snKuItdC3KHHA\\=\\= li.\\+Mausfg9yp68wnLVT6VqUw\\=\\=::before {\r\n    transform: translateX(-150%) rotate(90deg);\r\n}\r\n\r\n.FYGziG4-ux4R1SI49EozjQ\\=\\= {\r\n    max-height: 0;\r\n    font-size: 0.6em;\r\n    transform: rotateX(90deg);\r\n    transform-origin: top center;\r\n    transition: max-height 300ms linear, transform 300ms ease-out;\r\n}\r\n.C5M4CNcK5snKuItdC3KHHA\\=\\= li.\\+Mausfg9yp68wnLVT6VqUw\\=\\= .FYGziG4-ux4R1SI49EozjQ\\=\\= {\r\n    max-height: 100px;\r\n    transform: rotateX(0deg);\r\n}\r\n\r\n._3eocYWGTOEkHWeYY0c9lTw\\=\\= {\r\n    position: relative;\r\n    height: 1000px;\r\n    width: 100%;\r\n}\r\n._3eocYWGTOEkHWeYY0c9lTw\\=\\= img {\r\n    height: 100%;\r\n}\r\n._3eocYWGTOEkHWeYY0c9lTw\\=\\= div.eJ14eeb\\+zkCvzx8\\+djVV7g\\=\\= {\r\n    position: absolute;\r\n    left: 0;\r\n    right: 0;\r\n    height: 250px;\r\n}\r\n._3eocYWGTOEkHWeYY0c9lTw\\=\\= div._350kCbbkWy6sZkTnmFOFvQ\\=\\= {\r\n    background-image: url(/images/camera.jpg);\r\n    width: 100%;\r\n    height: 100%;\r\n    background-size: cover;\r\n}\r\n._3eocYWGTOEkHWeYY0c9lTw\\=\\= div.eJ14eeb\\+zkCvzx8\\+djVV7g\\=\\=:nth-child(1) {\r\n    top: 0;\r\n    background: linear-gradient(to top right, transparent 45%, black 50%, #191919 50%);\r\n}\r\n._3eocYWGTOEkHWeYY0c9lTw\\=\\= div.eJ14eeb\\+zkCvzx8\\+djVV7g\\=\\=:nth-child(3) {\r\n    bottom: 0;\r\n    background: linear-gradient(to bottom left, transparent 45%, black 50%, #535353 50%);\r\n}\r\n\r\n.gDdrVymZwTd-7jOqNieqHw\\=\\= {\r\n    padding: 60px 100px;\r\n    background-color: #1D1D1D;\r\n}\r\n.gDdrVymZwTd-7jOqNieqHw\\=\\= > div {\r\n    display: grid;\r\n    grid-template-columns: 1fr 1fr 1fr;\r\n}\r\n.gDdrVymZwTd-7jOqNieqHw\\=\\= > div > div {\r\n    padding: 0 10px;\r\n}\r\n\r\n.dsl8OVt\\+2yevQZ2GO0uM8Q\\=\\= div {\r\n    width: 100%;\r\n    height: 100%;\r\n    background-color: #fff;\r\n    display: flex;\r\n    align-items: center;\r\n    justify-content: center;\r\n    font-size: 3em;\r\n}\r\n\r\n.QgGC919fhbKa-XnSyHH92g\\=\\= .NfCdK9EAHvoGJofe4-H\\+tQ\\=\\= {\r\n    display: flex;\r\n    gap: 2em;\r\n}\r\n.gDdrVymZwTd-7jOqNieqHw\\=\\= .QgGC919fhbKa-XnSyHH92g\\=\\= div {\r\n    width: 100%;\r\n}\r\n.gDdrVymZwTd-7jOqNieqHw\\=\\= .QgGC919fhbKa-XnSyHH92g\\=\\= label, .gDdrVymZwTd-7jOqNieqHw\\=\\= .QgGC919fhbKa-XnSyHH92g\\=\\= input {\r\n    display: block;\r\n    width: 100%;\r\n}", ""]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"navigation": "BxmifCdSGiStJUjUC64w-w==",
 	"pageHead": "_81qgND4Y0wTd839QqpCQMA==",
+	"logo": "_0JNDASaNU7luPr8VtjOoBA==",
+	"photographer": "aEFBtppUxWy6yL-gvOANeQ==",
+	"introduction": "cbXU7bztyJU6X5xSM+7wSg==",
 	"section": "o1KMPmISP9FHXeYogR5X6A==",
 	"sectionContent": "IzhSP84DgTytS4UMLvuzqA==",
 	"sectionTitle": "rZ7mFDSkJH2UHdIqLMcTcw==",
