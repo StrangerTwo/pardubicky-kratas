@@ -1,17 +1,70 @@
-#page {
-    min-height: 300vh;
-    background-color: #1A1A1A;
-}
-
 .navigation {
-    position: sticky;
-    top: 40px;
+    position: fixed;
+    top: 0;
     left: 0;
     right: 0;
-    display: flex;
     margin: 0 40px;
     border-radius: 15px;
     padding: 30px;
     background-color: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(5px);
+    transition: margin-top 150ms ease-in-out;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.navigation a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #D1D1D1;
+    font-family: "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: 1.5em;
+}
+
+#pageHead {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-family: "Open Sans", "Helvetica Neue", sans-serif;
+    padding: 300px 30px 100px;
+}
+
+#pageHead h1 {
+    font-size: 2em;
+}
+
+.section {
+    position: relative;
+}
+.section h2 {
+    font-size: 4em;
+}
+.section p {
+    max-width: 60%;
+    line-height: 3;
+}
+.sectionContent {
+    padding: 60px 30px;
+    padding-bottom: 200px;
+}
+.sectionTitle {
+    padding: 90px 30px 50px;
+    display: flex;
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+}
+
+.section:nth-of-type(1) .sectionContent {
+    background-color: #101010;
+}
+
+.section:nth-of-type(2) .sectionContent{
+    background: #191919;
+}
+section:nth-of-type(2) .sectionTitle {
+    justify-content: flex-end;
+    background: linear-gradient(to bottom right, transparent 50%, #191919 50%);
 }

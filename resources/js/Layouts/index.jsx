@@ -7,12 +7,15 @@ import Navigation from "../components/Navigation"
 const Layout = ({children}) => {
     
     return (
-        <div id={style.page}>
-            <Navigation />
-            <main>
+        <>
+        
+        <Navigation />
+        <main>
+            <div>
                 {children}
-            </main>
-        </div>
+            </div>
+        </main>
+        </>
     )
 }
 
