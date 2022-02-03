@@ -3070,9 +3070,9 @@ __webpack_require__.r(__webpack_exports__);
 var HomePage = function HomePage() {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(_Layouts_index__WEBPACK_IMPORTED_MODULE_2__["default"], {
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_components_PageHead__WEBPACK_IMPORTED_MODULE_3__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(_components_Section__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      id: "soutez",
       className: _css_Home_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].soutez,
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("h2", {
-        id: "soutez",
         children: "O Sout\u011B\u017Ei"
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("p", {
         children: ["Pardubick\xFD Kra\u0165as je studentsk\xE1 filmov\xE1 sout\u011B\u017E student\u016F st\u0159edn\xEDch \u0161kol a druh\xE9ho stupn\u011B z\xE1kladn\xEDch \u0161kol. C\xEDlem tohoto projektu je nejenom vytvo\u0159en\xED region\xE1ln\xED sout\u011B\u017Ee kr\xE1tk\xFDch studentsk\xFDch film\u016F s celost\xE1tn\xEDm p\u0159esahem, ale i snaha ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("b", {
@@ -3084,9 +3084,9 @@ var HomePage = function HomePage() {
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(_components_Section__WEBPACK_IMPORTED_MODULE_4__["default"], {
       className: _css_Home_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].kategorie,
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("div", {
+        id: "kategorie",
         className: _css_Home_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].triangle,
         children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("h2", {
-          id: "kategorie",
           children: "Kategorie & ceny"
         })
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_components_Categories__WEBPACK_IMPORTED_MODULE_6__["default"], {})]
@@ -3101,9 +3101,9 @@ var HomePage = function HomePage() {
       })]
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(_components_Section__WEBPACK_IMPORTED_MODULE_4__["default"], {
       className: _css_Home_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].prihlaska,
+      id: "prihlaska",
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("h2", {
-          id: "prihlaska",
           children: "P\u0159ihl\xE1\u0161ka"
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("span", {
           children: "Vypl\u0148me spolu p\u0159ihl\xE1\u0161ku jednodu\u0161e ve t\u0159ech kroc\xEDch"
@@ -3537,9 +3537,11 @@ __webpack_require__.r(__webpack_exports__);
 
 var Section = function Section(_ref) {
   var children = _ref.children,
-      className = _ref.className;
+      className = _ref.className,
+      id = _ref.id;
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("section", {
     className: _css_Home_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].section + " " + className,
+    id: id,
     children: children
   });
 };
