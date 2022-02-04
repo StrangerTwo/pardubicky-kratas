@@ -10,7 +10,7 @@ const PageHead = () => {
                 <h1>Pardubický kraťas</h1>
                 <ul>
                     <li>7. DUBNA 2022</li>
-                    <li>Studentská filmová soutěž, aneb "Filmová veselka na Deltě"</li>
+                    <li>Studentská filmová soutěž, aka "Filmová veselka na Deltě"</li>
                 </ul>
             </div>
             <img className={style.logo} src="/images/logo.svg" height='250'/>

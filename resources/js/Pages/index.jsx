@@ -53,13 +53,13 @@ const HomePage = () => {
                     <div className={style.video}>
                         <img src="/images/example_1.jpg" />
                         <div className={style.playBtn}>
-                            <i class="fas fa-angle-right"></i>
+                            <i className="fas fa-angle-right"></i>
                         </div>
                     </div>
                     <div className={style.video}>
                         <img src="/images/example_2.jpg" />
                         <div className={style.playBtn}>
-                            <i class="fas fa-angle-right"></i>
+                            <i className="fas fa-angle-right"></i>
                         </div>
                     </div>
                 </div>

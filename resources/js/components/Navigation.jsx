@@ -16,18 +16,24 @@ const Navigation = () => {
         setDocked(window.scrollY == 0)
     }
 
+    const scrollTo = (selector) => {
+        const element = document.querySelector(selector);
+        if (!element) return;
+        window.scrollTo({top: element.getBoundingClientRect().y + window.scrollY - 30, behavior: 'smooth'})
+    }
+
     return (
         <nav className={style.navigation} style={{
             marginTop: docked ? 40 : 0
         }}>
-            <a href="#soutez">O soutěži</a>
-            <a href="#kategorie">Kategorie</a>
-            <a href="#prihlaska">Přihláška</a>
-            <a href="#projekce">Projekce</a>
-            <a href="#workshop">Workshop</a>
-            <a href="#vyhodnoceni">Vyhodnocení</a>
-            <a href="#partneri">Partneři</a>
-            <a href="#kontakty">Kontakty</a>
+            <span onClick={() => scrollTo("#soutez")}>O soutěži</span>
+            <span onClick={() => scrollTo("#kategorie")}>Kategorie</span>
+            <span onClick={() => scrollTo("#prihlaska")}>Přihláška</span>
+            <span onClick={() => scrollTo("#projekce")}>Projekce</span>
+            <span onClick={() => scrollTo("#workshop")}>Workshop</span>
+            <span onClick={() => scrollTo("#vyhodnoceni")}>Vyhodnocení</span>
+            <span onClick={() => scrollTo("#partneri")}>Partneři</span>
+            <span onClick={() => scrollTo("#kontakty")}>Kontakty</span>
         </nav>
     )
 }

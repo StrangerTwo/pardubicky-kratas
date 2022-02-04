@@ -14,12 +14,13 @@
     z-index: 1;
 }
 
-.navigation a {
+.navigation span {
     text-decoration: none;
     text-transform: uppercase;
     color: #D1D1D1;
     font-family: "Open Sans", "Helvetica Neue", sans-serif;
     font-size: 1.5em;
+    cursor: pointer;
 }
 
 #pageHead {
