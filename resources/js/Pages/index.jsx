@@ -41,6 +41,29 @@ const HomePage = () => {
                 </div>
                 <ApplicationPoints />
             </Section>
+            <div className={style.stage}>
+                <span>Natoč minifilm a pojď si zasoutěžit</span>
+            </div>
+            <Section className={style.projekce} id="projekce">
+                <div>
+                    <h2>Projekce</h2>
+                    <span>Projekce soutěžních studentských filmů budou probíhat online prostřednictvím videostreamu na našem videokanálu Delta Film</span>
+                </div>
+                <div className={style.videoExamples}>
+                    <div className={style.video}>
+                        <img src="/images/example_1.jpg" />
+                        <div className={style.playBtn}>
+                            <i class="fas fa-angle-right"></i>
+                        </div>
+                    </div>
+                    <div className={style.video}>
+                        <img src="/images/example_2.jpg" />
+                        <div className={style.playBtn}>
+                            <i class="fas fa-angle-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </Section>
             <Footer />
         </Layout>
     )

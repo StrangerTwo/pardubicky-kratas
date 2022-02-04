@@ -101,7 +101,7 @@
     margin: 0;
     margin-bottom: 15px;
 }
-.section.prihlaska div:first-child {
+.section.prihlaska > div:first-child {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -144,7 +144,7 @@
 
 .cameraPhoto {
     position: relative;
-    height: 700px;
+    height: 100vh;
     width: 100%;
 }
 .cameraPhoto img {
@@ -218,4 +218,85 @@
 }
 .applicationPoints li::marker, .applicationPoints span {
     font-size: 2.5em;
+}
+
+.stage {
+    position: relative;
+    background-image: url(/images/onstage.jpg);
+    background-position: bottom left;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.stage::before, .stage::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 15px;
+}
+.stage::before {
+    top: 0;
+    background: linear-gradient(to top, transparent, black);
+}
+.stage::after {
+    bottom: 0;
+    background: linear-gradient(to bottom, transparent, black);
+}
+.stage span {
+    display: block;
+    padding: 20px 40px;
+    font-size: 3em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.projekce > div:first-child {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.projekce > div:first-child h2 {
+    text-transform: uppercase;
+}
+.projekce > div:first-child span {
+    width: 60%;
+    text-align: center;
+}
+.videoExamples {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 150px;
+}
+.videoExamples div.video {
+    position: relative;
+    cursor: pointer;
+    width: 40%;
+}
+.videoExamples div.video img {
+    width: 100%;
+    filter: blur(2px);
+}
+
+div.playBtn {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #fff;
 }
