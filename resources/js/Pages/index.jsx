@@ -64,6 +64,29 @@ const HomePage = () => {
                     </div>
                 </div>
             </Section>
+            <Section className={style.porota}>
+                <h2>Odporná porota</h2>
+                <div>
+                    <p>
+                        Filmy bude hodnotit porota sestavená z odborníků z oblasti filmové, mediální, publicistické tvorby<br/>
+                        a pedagogů vyučujících předmět Filmová a mediální výchova.<br/>
+                        Slavnostní vyhlášení a setkání autorů vítězných snímků s porotou a zástupci partnerů proběhne ve čtvrtek dne 7.4.2022. 
+                    </p>
+                    <div className={style.separator}/>
+                    <div className={style.porotci}>
+                        <ol>
+                            <li>Jméno a foto porotce text - stručné představení každého porotce.</li>
+                            <li>Jméno a foto porotce text - stručné představení každého porotce.</li>
+                            <li>Jméno a foto porotce text - stručné představení každého porotce.</li>
+                            <li>Jméno a foto porotce text - stručné představení každého porotce.</li>
+                            <li>Jméno a foto porotce text - stručné představení každého porotce.</li>
+                        </ol>
+                        <div>
+                            OBR POROTY
+                        </div>
+                    </div>
+                </div>
+            </Section>
             <Footer />
         </Layout>
     )

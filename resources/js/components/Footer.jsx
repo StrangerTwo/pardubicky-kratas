@@ -7,13 +7,16 @@ const Footer = () => {
         <footer className={style.footer}>
             <div>
                 <div className={style.faq}>
-                    <span>Nehledáte ..</span>
-                    <ul>
-                        <li>Jak se přihlásit ?</li>
-                        <li>Kde nás najít ?</li>
-                        <li>Sponzoři ?</li>
-                        <li>Podmínky ?</li>
-                    </ul>
+                    <div>
+                        <span>Nehledáte ..</span>
+                        <ul>
+                            <li>Jak se přihlásit ?</li>
+                            <li>Kde nás najít ?</li>
+                            <li>Sponzoři ?</li>
+                            <li>Podmínky ?</li>
+                        </ul>
+                    </div>
+                    <span>© DELTA - SŠIE, s.r.o. - Všechna práva vyhrazena</span>
                 </div>
                 <div className={style.map}>
                     <div>
@@ -37,6 +40,9 @@ const Footer = () => {
                             <input type="text" name="email" placeholder="email@email.cz"></input>
                         </div>
                     </form>
+                    <div>
+                        <img src="/images/delta-logo.png" height="80"/>
+                    </div>
                 </div>
             </div>
         </footer>

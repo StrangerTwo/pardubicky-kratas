@@ -194,7 +194,15 @@
     justify-content: center;
     font-size: 3em;
 }
-
+.question, .faq {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.question > div {
+    display: flex;
+    justify-content: center;
+}
 .question .row {
     display: flex;
     gap: 2em;
@@ -206,6 +214,21 @@
     display: block;
     width: 100%;
 }
+.footer label {
+    margin: 10px 0 5px;
+    padding-left: 10px;
+    color: #7F7F7F;
+    font-weight: bold;
+}
+
+.footer input {
+    background-color: #262626;
+    padding: 0.5em 0.5em;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: inset 0px 0px 5px #000;
+}
+
 
 .applicationPoints {
     list-style: decimal;
@@ -300,4 +323,46 @@ div.playBtn {
     height: 50px;
     border-radius: 50%;
     border: 2px solid #fff;
+}
+
+.porota {
+    background-color: #101010;
+    color: #707070;
+}
+.porota h2 {
+    margin: 60px 0 100px;
+    text-transform: uppercase;
+}
+.porota p {
+    line-height: 3;
+}
+.porota > div {
+    padding-left: 50px;
+}
+.porota .separator {
+    width: 100%;
+    height: 5px;
+    background-color: #191919;
+    margin: 80px 0;
+}
+.porotci {
+    display: flex;
+    justify-content: space-between;
+}
+.porotci li {
+    padding-left: 40px;
+    margin-top: 50px;
+}
+.porotci li:first-child {
+    margin-top: 0;
+}
+.porotci div {
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    background-color: #fff;
+    color: #E8E8E8;
+    height: 400px;
+    width: 600px;
+    font-size: 3em;
 }
