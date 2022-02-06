@@ -23,9 +23,7 @@ const Navigation = () => {
     }
 
     return (
-        <nav className={style.navigation} style={{
-            marginTop: docked ? 40 : 0
-        }}>
+        <nav className={style.navigation + (docked ? (" " + style.docked) : "")}>
             <span onClick={() => scrollTo("#soutez")}>O soutěži</span>
             <span onClick={() => scrollTo("#kategorie")}>Kategorie</span>
             <span onClick={() => scrollTo("#prihlaska")}>Přihláška</span>

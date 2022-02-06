@@ -12,6 +12,10 @@
     display: flex;
     justify-content: space-between;
     z-index: 1;
+    margin-top: 40px;
+}
+.navigation.docked {
+    margin-top: 0;
 }
 
 .navigation span {
@@ -77,6 +81,9 @@
     line-height: 3;
 }
 
+.kategorie h2 {
+    text-align: right;
+}
 .section.kategorie {
     background: #191919;
 }
@@ -390,11 +397,13 @@ div.playBtn {
         padding-left: 10px;
     }
     .section {
-        position: relative;
         padding: 40px 60px 200px;
     }
-    .stage {
+    .stage, .cameraPhoto {
         height: 80vh;
+    }
+    .cameraPhoto div.triangle {
+        height: 150px;
     }
     .stage span {
         padding: 10px 20px;
@@ -411,25 +420,29 @@ div.playBtn {
     #pageHead .introduction {
         padding: 0 60px 200px; 
     }
+    .navigation {
+        margin: 0;
+        padding: 20px;
+    }
     .navigation span {
         font-size: 0.9em;
     }
     .categories li {
         font-size: 1.2em;
-        margin-top: 30px;
     }
     .section.kategorie .triangle {
         padding: 70px 20px 0;
     }
     .section {
-        position: relative;
         padding: 30px 40px 200px;
     }
-    .stage {
+    .stage, .cameraPhoto {
         height: 60vh;
     }
+    .cameraPhoto div.triangle {
+        height: 110px;
+    }
     .stage span {
-        padding: 10px 20px;
         font-size: 1.6em;
     }
     .porotci {
@@ -442,7 +455,7 @@ div.playBtn {
         padding: 50px 0;
     }
     .footer {
-        padding: 30px 40px;
+        padding: 30px 5px;
     }
     .footer > div {
         grid-template-columns: 1fr;
@@ -464,6 +477,9 @@ div.playBtn {
     }
 }
 @media (max-width: 600px){
+    .section h2 {
+        margin: 0.2em 0 0.5em;
+    }
     #pageHead .introduction {
         padding: 0 30px 180px; 
     }
@@ -471,28 +487,13 @@ div.playBtn {
         max-width: 100%;
     }
     .categories li {
-        font-size: 1.2em;
         margin-top: 30px;
     }
     .kategorie h2 {
         margin-bottom: 0;
     }
-    .section.kategorie .triangle {
-        padding: 70px 20px 0;
-    }
     .section {
-        position: relative;
-        padding: 30px 40px 120px;
-    }
-    .stage {
-        height: 60vh;
-    }
-    .stage span {
-        padding: 10px 20px;
-        font-size: 1.6em;
-    }
-    .porotci {
-        flex-direction: column;
+        padding: 30px 5px 120px;
     }
     .porotci div {
         width: 100%;
@@ -500,18 +501,10 @@ div.playBtn {
         font-size: 2.5em;
         padding: 50px 0;
     }
-    .footer {
-        padding: 30px 40px;
-    }
-    .footer > div {
-        grid-template-columns: 1fr;
-        row-gap: 30px;
-    }
     .applicationPoints li {
         margin-top: 40px;
     }
     .stage span {
-        padding: 10px 20px;
         font-size: 1.2em;
     }
     .videoExamples {
@@ -522,5 +515,16 @@ div.playBtn {
     }
     .videoExamples div.video {
         width: 100%;
+    }
+    .porotci ol {
+        margin: 0;
+        padding-left: 15px;
+    }
+    .porotci li {
+        padding-left: 10px;
+        margin-top: 30px;
+    }
+    .cameraPhoto div.triangle {
+        height: 80px;
     }
 }
