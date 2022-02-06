@@ -65,7 +65,7 @@ const HomePage = () => {
                 </div>
             </Section>
             <Section className={style.porota}>
-                <h2>Odporná porota</h2>
+                <h2>Odborná porota</h2>
                 <div>
                     <p>
                         Filmy bude hodnotit porota sestavená z odborníků z oblasti filmové, mediální, publicistické tvorby<br/>

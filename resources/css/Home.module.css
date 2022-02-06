@@ -43,14 +43,15 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    height: 300px;
-    transform: translate(-80px, 100px);
+    max-height: 260px;
+    max-width: 45%;
+    transform: translate(-20%, 25%);
 }
 #pageHead .photographer {
     position: absolute;
-    top: 0;
+    bottom: 0;
     right: 0;
-    height: 120%;
+    max-width: 50%;
 }
 #pageHead .introduction {
     padding: 0 100px 200px; 
@@ -61,8 +62,7 @@
 
 .section {
     position: relative;
-    padding: 60px 100px;
-    padding-bottom: 200px;
+    padding: 60px 80px 200px;
 }
 .section h2 {
     font-size: 4em;
@@ -362,7 +362,165 @@ div.playBtn {
     align-items:center;
     background-color: #fff;
     color: #E8E8E8;
-    height: 400px;
-    width: 600px;
+    height: auto;
+    width: 40%;
     font-size: 3em;
+}
+
+@media (max-width: 1300px){
+    .section h2 {
+        font-size: 3em;
+        letter-spacing: 0;
+    }
+    .navigation {
+        flex-wrap: wrap;
+    }
+    .navigation span {
+        font-size: 1.1em;
+        padding: 0.5em;
+    }
+    .categories li {
+        font-size: 1.6em;
+        margin-top: 30px;
+    }
+    .applicationPoints li::marker, .applicationPoints span {
+        font-size: 2em;
+    }
+    .porota > div {
+        padding-left: 10px;
+    }
+    .section {
+        position: relative;
+        padding: 40px 60px 200px;
+    }
+    .stage {
+        height: 80vh;
+    }
+    .stage span {
+        padding: 10px 20px;
+        font-size: 2.5em;
+    }
+    #pageHead {
+        padding: 180px 0 0;
+    }
+}
+@media (max-width: 900px){
+    .section h2 {
+        font-size: 2.5em;
+    }
+    #pageHead .introduction {
+        padding: 0 60px 200px; 
+    }
+    .navigation span {
+        font-size: 0.9em;
+    }
+    .categories li {
+        font-size: 1.2em;
+        margin-top: 30px;
+    }
+    .section.kategorie .triangle {
+        padding: 70px 20px 0;
+    }
+    .section {
+        position: relative;
+        padding: 30px 40px 200px;
+    }
+    .stage {
+        height: 60vh;
+    }
+    .stage span {
+        padding: 10px 20px;
+        font-size: 1.6em;
+    }
+    .porotci {
+        flex-direction: column;
+    }
+    .porotci div {
+        width: 100%;
+        margin-top: 60px;
+        font-size: 2.5em;
+        padding: 50px 0;
+    }
+    .footer {
+        padding: 30px 40px;
+    }
+    .footer > div {
+        grid-template-columns: 1fr;
+        row-gap: 30px;
+    }
+    .section.prihlaska {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .applicationPoints {
+        margin-top: 60px;
+        max-width: 100%;
+    }
+    .applicationPoints li::marker, .applicationPoints span {
+        font-size: 1.6em;
+    }
+    .applicationPoints li {
+        margin-top: 70px;
+    }
+}
+@media (max-width: 600px){
+    #pageHead .introduction {
+        padding: 0 30px 180px; 
+    }
+    .section.soutez p {
+        max-width: 100%;
+    }
+    .categories li {
+        font-size: 1.2em;
+        margin-top: 30px;
+    }
+    .kategorie h2 {
+        margin-bottom: 0;
+    }
+    .section.kategorie .triangle {
+        padding: 70px 20px 0;
+    }
+    .section {
+        position: relative;
+        padding: 30px 40px 120px;
+    }
+    .stage {
+        height: 60vh;
+    }
+    .stage span {
+        padding: 10px 20px;
+        font-size: 1.6em;
+    }
+    .porotci {
+        flex-direction: column;
+    }
+    .porotci div {
+        width: 100%;
+        margin-top: 60px;
+        font-size: 2.5em;
+        padding: 50px 0;
+    }
+    .footer {
+        padding: 30px 40px;
+    }
+    .footer > div {
+        grid-template-columns: 1fr;
+        row-gap: 30px;
+    }
+    .applicationPoints li {
+        margin-top: 40px;
+    }
+    .stage span {
+        padding: 10px 20px;
+        font-size: 1.2em;
+    }
+    .videoExamples {
+        display: flex;
+        flex-direction: column;
+        margin-top: 100px;
+        gap: 70px;
+    }
+    .videoExamples div.video {
+        width: 100%;
+    }
 }
