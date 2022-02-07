@@ -14,7 +14,7 @@ const PageHead = () => {
                 </ul>
             </div>
             <img className={style.logo} src="/images/transparent-kratas-logo.gif"/>
-            <img className={style.photographer} src="/images/photographer.jpg"/>
+            <img className={style.photographer} src="/images/photographer.png"/>
         </div>
     )
 }
