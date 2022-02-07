@@ -13,7 +13,7 @@ const PageHead = () => {
                     <li>Studentská filmová soutěž, aka "Filmová veselka na Deltě"</li>
                 </ul>
             </div>
-            <img className={style.logo} src="/images/logo.svg"/>
+            <img className={style.logo} src="/images/transparent-kratas-logo.gif"/>
             <img className={style.photographer} src="/images/photographer.jpg"/>
         </div>
     )

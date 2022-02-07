@@ -13,7 +13,7 @@ const Navigation = () => {
     }, [])
 
     const handleScroll = () => {
-        setDocked(window.scrollY == 0)
+        setDocked(window.scrollY != 0)
     }
 
     const scrollTo = (selector) => {
