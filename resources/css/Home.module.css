@@ -385,7 +385,7 @@ div.playBtn {
     }
     .navigation span {
         font-size: 1.1em;
-        padding: 0.5em;
+        padding: 0.15em;
     }
     .categories li {
         font-size: 1.6em;
@@ -424,6 +424,8 @@ div.playBtn {
     .navigation {
         margin: 0;
         padding: 20px;
+        justify-content: center;
+        gap: 10px;
     }
     .navigation span {
         font-size: 0.9em;
