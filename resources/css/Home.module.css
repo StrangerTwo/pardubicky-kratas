@@ -19,12 +19,33 @@
 }
 
 .navigation span {
+    position: relative;
     text-decoration: none;
     text-transform: uppercase;
     color: #D1D1D1;
     font-family: "Sitka Heading", "Open Sans", "Helvetica Neue", sans-serif;
     font-size: 1.5em;
     cursor: pointer;
+    transition: transform 150ms ease-in 50ms;
+}
+.navigation span:hover {
+    transform: translateY(-10px);
+}
+.navigation span::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -15%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    border-radius: 100px;
+    background-color: #7273AA;
+    transition: width 150ms ease-in 50ms;
+}
+.navigation span:hover::after {
+    width: 100%;
 }
 
 #pageHead {
