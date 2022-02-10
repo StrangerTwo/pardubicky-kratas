@@ -83,7 +83,7 @@ const HomePage = () => {
                         </div>
                         <div className={style.porotce}>
                             <div className={style.portrait}>
-                                <img src="/images/peml.jpg" alt="Jan Peml" />
+                                <img src="/images/spitalsky.jpg" alt="Jan Peml" />
                             </div>
                             <span>
                                 <b>Michal Špitálský</b> je student druhého ročníku oboru Film and TV Production na Northumbria University v anglickém Newcastlu. Ve volném čase pracuje na filmových dokumentech, spolupracuje na festivalu Jeden svět. Michal je absolventem naší školy.
@@ -91,7 +91,7 @@ const HomePage = () => {
                         </div>
                         <div className={style.porotce}>
                             <div className={style.portrait}>
-                                <img src="/images/peml.jpg" alt="Jan Peml" />
+                                <img src="/images/skrobak.jpg" alt="Jan Peml" />
                             </div>
                             <span>
                                 <b>Ing. Martin Škrobák</b> je předseda Východočeského volného sdružení pro amatérský film a video z.s. a hlavní organizátor soutěže Rychnovská 8.
@@ -99,7 +99,7 @@ const HomePage = () => {
                         </div>
                         <div className={style.porotce}>
                             <div className={style.portrait}>
-                                <img src="/images/peml.jpg" alt="Jan Peml" />
+                                <img src="/images/trnka.jpg" alt="Jan Peml" />
                             </div>
                             <span>
                                 <b>Mgr. et MgA. Pavel Trnka, Ph.D.</b> je výtvarník, režisér a autor animovaných filmů. Pracuje jako vysokoškolský pedagog na Pedagogické fakultě v Hradci Králové, kde garantuje řadu předmětů oboru Grafická tvorba a multimédia.
