@@ -400,6 +400,15 @@ div.playBtn {
     margin-bottom: 100px;
 }
 
+.partners {
+    min-height: 100vh;
+    background-color: #fff;
+    color: #000;
+}
+.partners h2 {
+    color: #000;
+}
+
 @media (max-width: 1300px){
     .section h2 {
         font-size: 3em;

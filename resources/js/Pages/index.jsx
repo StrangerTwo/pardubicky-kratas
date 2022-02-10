@@ -64,7 +64,7 @@ const HomePage = () => {
                     </div>
                 </div>
             </Section>
-            <Section className={style.porota}>
+            <Section className={style.porota} id="vyhodnoceni">
                 <h2>Odborná porota</h2>
                 <div>
                     <p>
@@ -107,6 +107,12 @@ const HomePage = () => {
                         </div>
                     </div>
                 </div>
+            </Section>
+            <Section className={style.partners} id="partneri">
+                <h2>Partneři</h2>
+            </Section>
+            <Section className={style.partners} id="kontakty">
+                <h2>Kontakty</h2>
             </Section>
             <Footer />
         </Layout>
