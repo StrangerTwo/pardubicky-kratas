@@ -7,7 +7,7 @@ const ApplicationPoints = () => {
     return (
         <ol className={style.applicationPoints}>
             <li>
-                <span>Vyplňte přihlášku</span>
+                <span>Vyplň přihlášku</span>
                 <p>Stáhni a následně <i>vyplň přihlášku</i></p>
             </li>
             <li>
