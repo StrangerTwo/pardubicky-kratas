@@ -68,21 +68,42 @@ const HomePage = () => {
                 <h2>Odborná porota</h2>
                 <div>
                     <p>
-                        Filmy bude hodnotit porota sestavená z odborníků z oblasti filmové, mediální, publicistické tvorby<br/>
-                        a pedagogů vyučujících předmět Filmová a mediální výchova.<br/>
-                        Slavnostní vyhlášení a setkání autorů vítězných snímků s porotou a zástupci partnerů proběhne ve čtvrtek dne 7.4.2022. 
+                    Filmy bude hodnotit porota sestavená z odborníků z oblasti filmové, mediální a publicistické tvorby.<br/>
+                    Slavnostní vyhlášení a setkání autorů vítězných snímků s porotou a zástupci partnerů proběhne ve čtvrtek dne 7.4.2022 v Pardubicích na SŠ DELTA, Ke Kamenci 151.
                     </p>
                     <div className={style.separator}/>
                     <div className={style.porotci}>
-                        <ol>
-                            <li>Jméno a foto porotce text - stručné představení každého porotce.</li>
-                            <li>Jméno a foto porotce text - stručné představení každého porotce.</li>
-                            <li>Jméno a foto porotce text - stručné představení každého porotce.</li>
-                            <li>Jméno a foto porotce text - stručné představení každého porotce.</li>
-                            <li>Jméno a foto porotce text - stručné představení každého porotce.</li>
-                        </ol>
-                        <div>
-                            OBR POROTY
+                        <div className={style.porotce}>
+                            <div className={style.portrait}>
+                                <img src="/images/peml.jpg" alt="Jan Peml" />
+                            </div>
+                            <span>
+                                <b>MgA. Jan Peml</b> střihač a kameraman, režisér. Je absolventem FAMU Praha. V současnosti vyučuje a vede pracovište Rozhlasová a televizní laboratoř na Institutu komunikačních studií a žurnalistiky UK FSV.
+                            </span>
+                        </div>
+                        <div className={style.porotce}>
+                            <div className={style.portrait}>
+                                <img src="/images/peml.jpg" alt="Jan Peml" />
+                            </div>
+                            <span>
+                                <b>Michal Špitálský</b> je student druhého ročníku oboru Film and TV Production na Northumbria University v anglickém Newcastlu. Ve volném čase pracuje na filmových dokumentech, spolupracuje na festivalu Jeden svět. Michal je absolventem naší školy.
+                            </span>
+                        </div>
+                        <div className={style.porotce}>
+                            <div className={style.portrait}>
+                                <img src="/images/peml.jpg" alt="Jan Peml" />
+                            </div>
+                            <span>
+                                <b>Ing. Martin Škrobák</b> je předseda Východočeského volného sdružení pro amatérský film a video z.s. a hlavní organizátor soutěže Rychnovská 8.
+                            </span>
+                        </div>
+                        <div className={style.porotce}>
+                            <div className={style.portrait}>
+                                <img src="/images/peml.jpg" alt="Jan Peml" />
+                            </div>
+                            <span>
+                                <b>Mgr. et MgA. Pavel Trnka, Ph.D.</b> je výtvarník, režisér a autor animovaných filmů. Pracuje jako vysokoškolský pedagog na Pedagogické fakultě v Hradci Králové, kde garantuje řadu předmětů oboru Grafická tvorba a multimédia.
+                            </span>
                         </div>
                     </div>
                 </div>

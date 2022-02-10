@@ -81,17 +81,29 @@
 #pageHead .introduction {
     padding: 0 100px 200px; 
 }
-#pageHead h1 {
-    font-size: 2em;
+.introduction div {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 1.3em;
+}
+.introduction div:nth-of-type(2) {
+    padding-left: 2em;
+}
+.introduction h1 {
+    font-size: 4em;
+    margin: 0;
+    margin-bottom: 30px;
 }
 
 .section {
     position: relative;
     padding: 60px 80px 200px;
+    color: #ACACAC;
 }
 .section h2 {
     font-size: 4em;
     letter-spacing: 2px;
+    color: #D1D1D1;
 }
 
 .section.soutez {
@@ -202,15 +214,11 @@
 }
 
 .footer {
-    padding: 60px 100px;
-    background-color: #1D1D1D;
+    display: flex;
+    min-height: 50vh;
 }
-.footer > div {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-.footer > div > div {
-    padding: 0 10px;
+.footer iframe {
+    flex-grow: 1;
 }
 
 .map div {
@@ -235,28 +243,6 @@
     display: flex;
     gap: 2em;
 }
-.footer .question div {
-    width: 100%;
-}
-.footer .question label, .footer .question input {
-    display: block;
-    width: 100%;
-}
-.footer label {
-    margin: 10px 0 5px;
-    padding-left: 10px;
-    color: #7F7F7F;
-    font-weight: bold;
-}
-
-.footer input {
-    background-color: #262626;
-    padding: 0.5em 0.5em;
-    border: 0;
-    border-radius: 5px;
-    box-shadow: inset 0px 0px 5px #000;
-}
-
 
 .applicationPoints {
     list-style: decimal;
@@ -275,12 +261,12 @@
 .stage {
     position: relative;
     background-image: url(/images/onstage.jpg);
-    background-position: center left;
+    background-position: center center;
     background-size: cover;
     width: 100%;
     height: 100vh;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
 }
 .stage::before, .stage::after {
@@ -307,6 +293,7 @@
     text-transform: uppercase;
     color: black;
     background-color: rgba(255, 255, 255, 0.4);
+    margin-bottom: 2%;
 }
 
 .projekce > div:first-child {
@@ -374,26 +361,42 @@ div.playBtn {
     background-color: #191919;
     margin: 80px 0;
 }
+
 .porotci {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5px;
+}
+.porotce {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    gap: 30px;
 }
-.porotci li {
-    padding-left: 40px;
-    margin-top: 50px;
+.porotce span {
+    flex-grow: 1;
+    padding: 1em 0;
 }
-.porotci li:first-child {
-    margin-top: 0;
+.porotce span b {
+    color: #ABABAB;
 }
-.porotci div {
-    display: flex;
-    justify-content:center;
-    align-items:center;
-    background-color: #fff;
-    color: #E8E8E8;
-    height: auto;
-    width: 40%;
-    font-size: 3em;
+.porotce .portrait {
+    height: 220px;
+    width: 220px;
+    flex: 0 0 220px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.porotce .portrait img {
+    height: 100%;
+    width: 100%;
+}
+.porotce:nth-child(even) {
+    margin-top: 100px;
+    flex-direction: row-reverse;
+}
+.porotce:nth-child(odd) {
+    margin-bottom: 100px;
 }
 
 @media (max-width: 1300px){
@@ -434,6 +437,14 @@ div.playBtn {
     #pageHead {
         padding: 180px 0 0;
     }
+    .porotce {
+        gap: 10px;
+    }
+    .porotce .portrait {
+        height: 160px;
+        width: 160px;
+        flex: 0 0 160px;
+    }
 }
 @media (max-width: 900px){
     .section h2 {
@@ -441,6 +452,12 @@ div.playBtn {
     }
     #pageHead .introduction {
         padding: 0 60px 200px; 
+    }
+    .introduction div {
+        font-size: 1em;
+    }
+    .introduction h1 {
+        font-size: 3em;
     }
     .navigation {
         margin: 0;
@@ -469,22 +486,6 @@ div.playBtn {
     .stage span {
         font-size: 1.6em;
     }
-    .porotci {
-        flex-direction: column;
-    }
-    .porotci div {
-        width: 100%;
-        margin-top: 60px;
-        font-size: 2.5em;
-        padding: 50px 0;
-    }
-    .footer {
-        padding: 30px 5px;
-    }
-    .footer > div {
-        grid-template-columns: 1fr;
-        row-gap: 30px;
-    }
     .section.prihlaska {
         flex-direction: column;
         align-items: flex-start;
@@ -499,13 +500,28 @@ div.playBtn {
     .applicationPoints li {
         margin-top: 70px;
     }
+    .porotci {
+        grid-template-columns: 1fr;
+    }
+    .porotce {
+        margin: 10px 0 !important;
+    }
 }
 @media (max-width: 600px){
     .section h2 {
         margin: 0.2em 0 0.5em;
     }
     #pageHead .introduction {
-        padding: 0 30px 180px; 
+        padding: 0 16px 180px; 
+    }
+    .introduction div {
+        font-size: 1em;
+    }
+    .introduction div:nth-of-type(2) {
+        padding-left: 1.2em;
+    }
+    .introduction h1 {
+        font-size: 2em;
     }
     .section.soutez p {
         max-width: 100%;
@@ -518,12 +534,6 @@ div.playBtn {
     }
     .section {
         padding: 30px 5px 120px;
-    }
-    .porotci div {
-        width: 100%;
-        margin-top: 60px;
-        font-size: 2.5em;
-        padding: 50px 0;
     }
     .applicationPoints li {
         margin-top: 40px;
@@ -540,15 +550,13 @@ div.playBtn {
     .videoExamples div.video {
         width: 100%;
     }
-    .porotci ol {
-        margin: 0;
-        padding-left: 15px;
-    }
-    .porotci li {
-        padding-left: 10px;
-        margin-top: 30px;
-    }
     .cameraPhoto div.triangle {
         height: 80px;
+    }
+    .porotce {
+        flex-direction: column !important;
+    }
+    .porotce span {
+        max-width: 350px;
     }
 }

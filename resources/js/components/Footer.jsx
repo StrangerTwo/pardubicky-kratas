@@ -5,46 +5,7 @@ import style from "../../css/Home.module.css"
 const Footer = () => {
     return (
         <footer className={style.footer}>
-            <div>
-                <div className={style.faq}>
-                    <div>
-                        <span>Nehledáte ..</span>
-                        <ul>
-                            <li>Jak se přihlásit ?</li>
-                            <li>Kde nás najít ?</li>
-                            <li>Sponzoři ?</li>
-                            <li>Podmínky ?</li>
-                        </ul>
-                    </div>
-                    <span>© DELTA - SŠIE, s.r.o. - Všechna práva vyhrazena</span>
-                </div>
-                <div className={style.map}>
-                    <div>
-                        Mapa
-                    </div>
-                </div>
-                <div className={style.question}>
-                    <form>
-                        <div className={style.row}>
-                            <div>
-                                <label>Jméno a Příjmení:</label>
-                                <input type="text" name="name" placeholder="Bořivoj Olský"></input>
-                            </div>
-                            <div>
-                                <label>Váš email:</label>
-                                <input type="text" name="email" placeholder="email@email.cz"></input>
-                            </div>
-                        </div>
-                        <div className={style.x}>
-                            <label>Váš email:</label>
-                            <input type="text" name="email" placeholder="email@email.cz"></input>
-                        </div>
-                    </form>
-                    <div>
-                        <img src="/images/delta-logo.png" height="80"/>
-                    </div>
-                </div>
-            </div>
+            <iframe id="contactMap" allowFullScreen="" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10251.198346408395!2d15.781613262147543!3d50.033851075892265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470dcc8b132e5567%3A0x375fdea61136abb9!2sDELTA+-+St%C5%99edn%C3%AD+%C5%A1kola+informatiky+a+ekonomie%2C+s.r.o.!5e0!3m2!1scs!2sid!4v1541001901903"></iframe>
         </footer>
     )
 }
