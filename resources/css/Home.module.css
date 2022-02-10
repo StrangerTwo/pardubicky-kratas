@@ -139,7 +139,12 @@
     flex-direction: column;
     align-items: center;
 }
-
+.prihlaska a {
+    color: #0364B8;
+}
+.prihlaska a:visited {
+    color: #7273AA;
+}
 .categories {
     list-style: none;
     color: #ACACAC;
