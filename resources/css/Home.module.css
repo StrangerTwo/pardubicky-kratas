@@ -68,7 +68,7 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    max-height: 260px;
+    max-height: 225px;
     max-width: 45%;
     transform: translate(-20%, 25%);
 }
@@ -80,14 +80,6 @@
 }
 #pageHead .introduction {
     padding: 0 100px 200px; 
-}
-.introduction div {
-    display: inline-block;
-    vertical-align: top;
-    font-size: 1.3em;
-}
-.introduction div:nth-of-type(2) {
-    padding-left: 2em;
 }
 .introduction h1 {
     font-size: 4em;
@@ -135,7 +127,7 @@
     background-color: #191919;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-direction: row-reverse;
 }
 .section.prihlaska h2 {
@@ -482,6 +474,53 @@ div.playBtn {
 }
 .dotaz textarea {
     resize: vertical;
+}
+
+.infoBlock div {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 1.5em;
+}
+.infoBlock  div:nth-of-type(2) {
+    padding-left: 2em;
+}
+.infoShow > div {
+    position: absolute;
+    opacity: 0;
+}
+.infoShow > div:nth-child(1) {
+    animation: info1 10s linear infinite;
+}
+.infoShow > div:nth-child(2) {
+    animation: info2 10s linear infinite;
+}
+.infoShow > div:nth-child(3) {
+    position: relative;
+    animation: info3 10s linear infinite;
+}
+@keyframes info1 {
+    5%, 45% {
+        opacity: 1;
+    }
+    0%, 50%, 100% {
+        opacity: 0;
+    }
+}
+@keyframes info2 {
+    0%, 50%, 75% {
+        opacity: 0;
+    }
+    55%, 70% {
+        opacity: 1;
+    }
+}
+@keyframes info3 {
+    0%, 75% {
+        opacity: 0;
+    }
+    80%, 95% {
+        opacity: 1;
+    }
 }
 
 @media (max-width: 1300px){

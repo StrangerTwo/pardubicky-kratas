@@ -37,7 +37,7 @@ const HomePage = () => {
             <Section className={style.prihlaska} id="prihlaska">
                 <div>
                     <h2>Přihláška</h2>
-                    <span>Vyplňme spolu přihlášku jednoduše ve třech krocích</span>
+                    <span>Vyplň přihlášku jednoduše ve dvou krocích</span>
                 </div>
                 <ApplicationPoints />
             </Section>
@@ -78,7 +78,7 @@ const HomePage = () => {
                                 <img src="/images/peml.jpg" alt="MgA. Jan Peml" />
                             </div>
                             <span>
-                                <b>MgA. Jan Peml</b> střihač a kameraman, režisér. Je absolventem FAMU Praha. V současnosti vyučuje a vede pracovište Rozhlasová a televizní laboratoř na Institutu komunikačních studií a žurnalistiky UK FSV.
+                                <b>MgA. Jan Peml</b> je střihač, kameraman a režisér. Je absolventem FAMU Praha. V současnosti vyučuje a vede pracovište Rozhlasová a televizní laboratoř na Institutu komunikačních studií a žurnalistiky UK FSV.
                             </span>
                         </div>
                         <div className={style.porotce}>
