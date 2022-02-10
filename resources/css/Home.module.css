@@ -409,6 +409,81 @@ div.playBtn {
     color: #000;
 }
 
+.partners, .kontakty {
+    padding-top: 50px;
+    padding-bottom: 120px;
+}
+
+.kontakty {
+    min-height: 500px;
+    background-color: #F6F6F6;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+}
+.kontakty h2 {
+    color: #0C1B20;
+    text-align: center;
+}
+.kontakty > div {
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1;
+    width: 100%;
+}
+.contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 25px;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.contact img {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.contact div {
+    display: inline-flex;
+    flex-direction: column;
+}
+.contact .name {
+    font-size: x-large;
+}
+
+.dotaz {
+    width: 35%;
+    max-width: 35%;
+}
+.dotaz form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.dotaz div {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.dotaz input, .dotaz textarea {
+    border: 0;
+    padding: 15px;
+    border-radius: 7px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+.dotaz input {
+    width: 100%;
+}
+.dotaz textarea {
+    resize: vertical;
+}
+
 @media (max-width: 1300px){
     .section h2 {
         font-size: 3em;
@@ -432,7 +507,9 @@ div.playBtn {
         padding-left: 10px;
     }
     .section {
-        padding: 40px 60px 200px;
+        padding-top: 40px;
+        padding-left: 60px;
+        padding-right: 60px;
     }
     .stage, .cameraPhoto {
         height: 80vh;
@@ -485,7 +562,9 @@ div.playBtn {
         padding: 70px 20px 0;
     }
     .section {
-        padding: 30px 40px 200px;
+        padding-top: 30px;
+        padding-left: 40px;
+        padding-right: 40px;
     }
     .stage, .cameraPhoto {
         height: 60vh;
@@ -516,6 +595,15 @@ div.playBtn {
     .porotce {
         margin: 10px 0 !important;
     }
+    .kontakty > div {
+        align-self: center;
+        gap: 80px;
+        flex-direction: column;
+    }
+    .dotaz {
+        width: initial;
+        max-width: unset;
+    }
 }
 @media (max-width: 600px){
     .section h2 {
@@ -543,7 +631,9 @@ div.playBtn {
         margin-bottom: 0;
     }
     .section {
-        padding: 30px 5px 120px;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-bottom: 120px;
     }
     .applicationPoints li {
         margin-top: 40px;
@@ -568,5 +658,11 @@ div.playBtn {
     }
     .porotce span {
         max-width: 350px;
+    }
+    .dotaz div {
+        flex-direction: column;
+    }
+    .dotaz input {
+        width: initial;
     }
 }

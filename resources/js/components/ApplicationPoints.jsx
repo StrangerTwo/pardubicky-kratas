@@ -8,7 +8,7 @@ const ApplicationPoints = () => {
         <ol className={style.applicationPoints}>
             <li>
                 <span>Vyplňte přihlášku</span>
-                <p>Stáhněte a následně vyplňte přihlášku PCE-KRATAS 2022 přihláška.doc</p>
+                <p>Stáhni a následně <i>vyplň přihlášku</i> - pošli film přes Úschovnu na info@pardubickykratas.cz</p>
             </li>
             <li>
                 <span>Zvolte formát</span>

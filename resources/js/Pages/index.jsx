@@ -75,7 +75,7 @@ const HomePage = () => {
                     <div className={style.porotci}>
                         <div className={style.porotce}>
                             <div className={style.portrait}>
-                                <img src="/images/peml.jpg" alt="Jan Peml" />
+                                <img src="/images/peml.jpg" alt="MgA. Jan Peml" />
                             </div>
                             <span>
                                 <b>MgA. Jan Peml</b> střihač a kameraman, režisér. Je absolventem FAMU Praha. V současnosti vyučuje a vede pracovište Rozhlasová a televizní laboratoř na Institutu komunikačních studií a žurnalistiky UK FSV.
@@ -83,7 +83,7 @@ const HomePage = () => {
                         </div>
                         <div className={style.porotce}>
                             <div className={style.portrait}>
-                                <img src="/images/spitalsky.jpg" alt="Jan Peml" />
+                                <img src="/images/spitalsky.jpg" alt="Michal Špitálský" />
                             </div>
                             <span>
                                 <b>Michal Špitálský</b> je student druhého ročníku oboru Film and TV Production na Northumbria University v anglickém Newcastlu. Ve volném čase pracuje na filmových dokumentech, spolupracuje na festivalu Jeden svět. Michal je absolventem naší školy.
@@ -91,7 +91,7 @@ const HomePage = () => {
                         </div>
                         <div className={style.porotce}>
                             <div className={style.portrait}>
-                                <img src="/images/skrobak.jpg" alt="Jan Peml" />
+                                <img src="/images/skrobak.jpg" alt="Ing. Martin Škrobák" />
                             </div>
                             <span>
                                 <b>Ing. Martin Škrobák</b> je předseda Východočeského volného sdružení pro amatérský film a video z.s. a hlavní organizátor soutěže Rychnovská 8.
@@ -99,7 +99,7 @@ const HomePage = () => {
                         </div>
                         <div className={style.porotce}>
                             <div className={style.portrait}>
-                                <img src="/images/trnka.jpg" alt="Jan Peml" />
+                                <img src="/images/trnka.jpg" alt="Mgr. et MgA. Pavel Trnka" />
                             </div>
                             <span>
                                 <b>Mgr. et MgA. Pavel Trnka, Ph.D.</b> je výtvarník, režisér a autor animovaných filmů. Pracuje jako vysokoškolský pedagog na Pedagogické fakultě v Hradci Králové, kde garantuje řadu předmětů oboru Grafická tvorba a multimédia.
@@ -111,8 +111,37 @@ const HomePage = () => {
             <Section className={style.partners} id="partneri">
                 <h2>Partneři</h2>
             </Section>
-            <Section className={style.partners} id="kontakty">
+            <Section className={style.kontakty} id="kontakty">
                 <h2>Kontakty</h2>
+                <div>
+                    <div className={style.contacts}>
+                        <div className={style.contact}>
+                            <img src="/images/brun.jpg" alt="Richard Brun"/>
+                            <div>
+                                <span className={style.name}>Richard Brun</span>
+                                <span>Tel.: +420 123 456 789</span>
+                                <span>Email: info@pardubickykratas.cz</span>
+                            </div>
+                        </div>
+                        <div className={style.contact}>
+                            <img src="/images/votavova.webp" alt="Gabriela Votavová"/>
+                            <div>
+                                <span className={style.name}>Gabriela Votavová</span>
+                                <span>Tel.: +420 123 456 789</span>
+                                <span>Email: info@pardubickykratas.cz</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div className={style.dotaz}>
+                        <form method="post" action="/send">
+                            <div>
+                                <input type="text" name="subject" placeholder="Téma dotazu"></input>
+                                <input type="text" name="email" placeholder="Tvůj email"></input>
+                            </div>
+                            <textarea name="content" rows="6" placeholder="Popis problému..."></textarea>
+                        </form>
+                    </div>
+                </div>
             </Section>
             <Footer />
         </Layout>
