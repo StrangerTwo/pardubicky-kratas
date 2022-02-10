@@ -386,6 +386,7 @@ div.playBtn {
     flex: 0 0 220px;
     border-radius: 50%;
     overflow: hidden;
+    box-shadow: 0 0 10px #2F2F2F, 0 0 20px #2F2F2F;
 }
 .porotce .portrait img {
     height: 100%;
