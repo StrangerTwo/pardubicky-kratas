@@ -145,39 +145,30 @@
 .prihlaska a:visited {
     color: #7273AA;
 }
+
+.kategorie > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.rewards {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.rewards li {
+    font-size: 1.6em;
+    width: max-content;
+}
 .categories {
-    list-style: none;
-    color: #ACACAC;
+    font-size: 2em;
 }
 .categories li {
-    position: relative;
-    font-size: 2em;
     margin-top: 40px;
 }
 .categories li:first-child {
     margin-top: 0;
-}
-.categories li::before {
-    position: absolute;
-    content: ">";
-    color: #474747;
-    transform: translateX(-150%);
-    transition: transform 300ms ease-out;
-}
-.categories li.open::before {
-    transform: translateX(-150%) rotate(90deg);
-}
-
-.categoryContent {
-    max-height: 0;
-    font-size: 0.6em;
-    transform: rotateX(90deg);
-    transform-origin: top center;
-    transition: max-height 300ms linear, transform 300ms ease-out;
-}
-.categories li.open .categoryContent {
-    max-height: 100px;
-    transform: rotateX(0deg);
 }
 
 .cameraPhoto {
@@ -398,12 +389,58 @@ div.playBtn {
 }
 
 .partners {
-    min-height: 100vh;
+    position: relative;
+    min-height: 80vh;
     background-color: #fff;
     color: #000;
 }
 .partners h2 {
     color: #000;
+}
+.partnerDetail {
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    max-width: 40%;
+    transform: translateY(-50%);
+}
+.slideshow {
+    position: absolute;
+    height: 88%;
+    width: 100%;
+    bottom: 12%;
+    left: 0;
+}
+.partner {
+    position: absolute;
+    bottom: 0;
+    width: 10%;
+    height: 30%;
+    right: 50%;
+    cursor: pointer;
+    transition-property: width, height, right;
+    transition-duration: 600ms;
+    transition-timing-function: ease-in-out;
+}
+.partner.selected {
+    width: 30%;
+    height: 70%;
+    right: 10%;
+    z-index: 1;
+}
+.partner img {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    object-fit: contain;
+    max-height: 100%;
+    transition-property: bottom, transform;
+    transition-duration: 300ms;
+    transition-timing-function: ease-out;
+}
+.partner.selected img {
+    bottom: 50%;
+    transform: translateY(50%);
 }
 
 .partners, .kontakty {
@@ -450,7 +487,7 @@ div.playBtn {
     display: inline-flex;
     flex-direction: column;
 }
-.contact .name {
+.name {
     font-size: x-large;
 }
 

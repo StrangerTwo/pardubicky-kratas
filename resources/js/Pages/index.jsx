@@ -9,6 +9,7 @@ import Footer from '../components/Footer'
 
 import Categories from '../components/Categories'
 import ApplicationPoints from '../components/ApplicationPoints'
+import Partners from '../components/Partners'
 
 const HomePage = () => {
     
@@ -27,7 +28,17 @@ const HomePage = () => {
                 <div id="kategorie" className={style.triangle} >
                     <h2>Kategorie &amp; ceny</h2>
                 </div>
-                <Categories />
+                <div>
+                    <Categories />
+                    <div className={style.rewards} >
+                        <ol>
+                            <li>5.000,- Kč</li>
+                            <li>3.000,- Kč</li>
+                            <li>2.000,- Kč</li>
+                        </ol>
+                        <p>Zvláštní cena partnera soutěže firmy FOMEI (poukazy, foto-video technika).</p>
+                    </div>
+                </div>
             </Section>
             <div className={style.cameraPhoto}>
                 <div className={style.triangle} />
@@ -109,7 +120,7 @@ const HomePage = () => {
                 </div>
             </Section>
             <Section className={style.partners} id="partneri">
-                <h2>Partneři</h2>
+                <Partners />
             </Section>
             <Section className={style.kontakty} id="kontakty">
                 <h2>Kontakty</h2>

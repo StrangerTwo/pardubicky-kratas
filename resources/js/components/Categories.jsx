@@ -23,24 +23,12 @@ const Categories = () => {
 
     return (
         <ul className={style.categories}>
-            <Category title="Krátký film na regionální téma města Pardubice a Pardubického kraje">
-                Text o XXXX
-            </Category>
-            <Category title="Krátký hraný film">
-                Text o XXXX
-            </Category>
-            <Category title="Animovaný film">
-                Text o XXXX
-            </Category>
-            <Category title="Videoklip a YouTube videoprezentace">
-                Text o XXXX
-            </Category>
-            <Category title="Juniorské filmové okénko">
-                Text o XXXX
-            </Category>
-            <Category title="Snímky studentů filmových škol do 21 let">
-                Text o XXXX
-            </Category>
+            <li>Krátký film na regionální téma města Pardubice a Pardubického kraje</li>
+            <li>Krátký hraný film</li>
+            <li>Animovaný film</li>
+            <li>Videoklip a YouTube videoprezentace</li>
+            <li>Juniorské filmové okénko</li>
+            <li>Snímky studentů filmových škol do 21 let</li>
         </ul>
     )
 }
