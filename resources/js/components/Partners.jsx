@@ -16,7 +16,7 @@ const Partners = () => {
         },
         {
             name: 'Magistrát města Pardubice',
-            image: '/images/magistrat-mesta-pardubice.png',
+            image: '/images/magistrat-mesta-pardubice.svg',
             text: 'Txt o partnerovy se mění s logem pratnera'
         },
         {
