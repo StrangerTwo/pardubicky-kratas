@@ -534,7 +534,7 @@ div.playBtn {
 }
 .submitRow > div:nth-child(2) a, .submitRow > div:nth-child(2) svg {
     color: #ABABAB;
-    height: 100%;
+    font-size: 35px;
 }
 
 .infoBlock div {
@@ -702,6 +702,7 @@ div.playBtn {
 }
 @media (max-width: 600px){
     .section h2 {
+        text-align: center;
         margin: 0.2em 0 0.5em;
     }
     #pageHead .introduction {
@@ -715,6 +716,9 @@ div.playBtn {
     }
     .introduction h1 {
         font-size: 2em;
+    }
+    .prihlaska > div:first-child {
+        margin: 0 auto;
     }
     .section.soutez p {
         max-width: 100%;
@@ -732,8 +736,8 @@ div.playBtn {
         margin-bottom: 0;
     }
     .section {
-        padding-left: 5px;
-        padding-right: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
         padding-bottom: 120px;
     }
     .applicationPoints li {
@@ -757,7 +761,7 @@ div.playBtn {
     .porotce span {
         max-width: 350px;
     }
-    .dotaz div {
+    .dotaz > div:nth-of-type(1) {
         flex-direction: column;
     }
     .dotaz input {
