@@ -6,7 +6,7 @@ const Partners = () => {
     const partners = [
         {
             name: 'FOMEI',
-            image: '/images/fomei.png',
+            image: '/images/fomei.svg',
             text: 'Txt o partnerovy se mění s logem pratnera'
         },
         {
