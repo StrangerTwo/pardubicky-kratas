@@ -5,13 +5,8 @@ import style from "../../css/Home.module.css"
 const Partners = () => {
     const partners = [
         {
-            name: 'Pardubický kraj',
-            image: '/images/pardubicky-kraj.svg',
-            text: 'Txt o partnerovy se mění s logem pratnera'
-        },
-        {
-            name: 'Magistrát města Pardubice',
-            image: '/images/magistrat-mesta-pardubice.svg',
+            name: 'VčVSAFV a Rychnovská 8',
+            image: '/images/vcvsafv.png',
             text: 'Txt o partnerovy se mění s logem pratnera'
         },
         {
@@ -20,8 +15,13 @@ const Partners = () => {
             text: 'Txt o partnerovy se mění s logem pratnera'
         },
         {
-            name: 'VčVSAFV a Rychnovská 8',
-            image: '/images/vcvsafv.png',
+            name: 'Magistrát města Pardubice',
+            image: '/images/magistrat-mesta-pardubice.svg',
+            text: 'Txt o partnerovy se mění s logem pratnera'
+        },
+        {
+            name: 'Pardubický kraj',
+            image: '/images/pardubicky-kraj.svg',
             text: 'Txt o partnerovy se mění s logem pratnera'
         }
     ];
