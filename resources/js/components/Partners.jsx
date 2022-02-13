@@ -49,7 +49,7 @@ const Partners = () => {
 
         if (!position) return 8;
 
-        return 45 + (position - 1) * 12;
+        return 42 + (position - 1) * 10;
     }
 
     return (
