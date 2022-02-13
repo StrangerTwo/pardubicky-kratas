@@ -717,6 +717,9 @@ div.playBtn {
     .introduction h1 {
         font-size: 2em;
     }
+    .partners {
+        min-height: 60vh;
+    }
     .prihlaska > div:first-child {
         margin: 0 auto;
     }
