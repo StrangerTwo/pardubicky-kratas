@@ -6,7 +6,7 @@ const Partners = () => {
     const partners = [
         {
             name: 'VčVSAFV a Rychnovská 8',
-            image: '/images/vcvsafv.png',
+            image: '/images/R8_a_VcVSAFV.svg',
             text: 'Txt o partnerovy se mění s logem pratnera'
         },
         {
