@@ -27,7 +27,7 @@ const Partners = () => {
     ];
 
 
-    const [selected, setSelected] = useState(0);
+    const [selected, setSelected] = useState(partners.length - 1);
 
     const select = (partner) => {
         setSelected(partners.indexOf(partner));
