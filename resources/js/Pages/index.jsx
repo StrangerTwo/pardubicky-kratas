@@ -11,6 +11,9 @@ import Categories from '../components/Categories'
 import ApplicationPoints from '../components/ApplicationPoints'
 import Partners from '../components/Partners'
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faInstagram, faFacebook } from '@fortawesome/free-brands-svg-icons'
+
 const HomePage = () => {
     
     return (
@@ -53,7 +56,6 @@ const HomePage = () => {
                 <ApplicationPoints />
             </Section>
             <div className={style.stage}>
-                <span>Natoč krátký film a pojď soutěžit!</span>
             </div>
             <Section className={style.projekce} id="projekce">
                 <div>
@@ -143,15 +145,25 @@ const HomePage = () => {
                             </div>
                         </div>
                     </div>
-                    <div className={style.dotaz}>
-                        <form method="post" action="/send">
+                    <form className={style.dotaz} method="post" action="/send">
+                        <div>
+                            <input type="text" name="subject" placeholder="Téma dotazu"></input>
+                            <input type="text" name="email" placeholder="Tvůj email"></input>
+                        </div>
+                        <textarea name="content" rows="6" placeholder="Popis problému..."></textarea>
+                        <div>
+                            <button type="submit">Odeslat</button>
+                            <img src="/images/delta.svg" width="100"/>
                             <div>
-                                <input type="text" name="subject" placeholder="Téma dotazu"></input>
-                                <input type="text" name="email" placeholder="Tvůj email"></input>
+                                <a href="https://instagram.com">
+                                    <FontAwesomeIcon icon={faInstagram} />
+                                </a>
+                                <a href="https://facebook.com">
+                                    <FontAwesomeIcon icon={faFacebook} />
+                                </a>
                             </div>
-                            <textarea name="content" rows="6" placeholder="Popis problému..."></textarea>
-                        </form>
-                    </div>
+                        </div>
+                    </form>
                 </div>
             </Section>
             <Footer />

@@ -8,7 +8,7 @@ const ApplicationPoints = () => {
         <ol className={style.applicationPoints}>
             <li>
                 <span>Vyplň přihlášku</span>
-                <p>Stáhni a následně <i><a href="/kratas_prihlaska.pdf">vyplň přihlášku</a></i></p>
+                <p><i><a href="/kratas_prihlaska.pdf">Stažení a vyplnění přihlášky</a></i></p>
             </li>
             <li>
                 <span>Pošli své dílo</span>

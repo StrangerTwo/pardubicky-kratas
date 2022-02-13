@@ -273,16 +273,6 @@
     bottom: 0;
     background: linear-gradient(to bottom, transparent, black);
 }
-.stage span {
-    display: block;
-    padding: 20px 40px;
-    font-size: 3em;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: black;
-    background-color: rgba(255, 255, 255, 0.4);
-    margin-bottom: 2%;
-}
 
 .projekce > div:first-child {
     width: 100%;
@@ -495,17 +485,17 @@ div.playBtn {
     width: 35%;
     max-width: 35%;
 }
-.dotaz form {
+.dotaz {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
-.dotaz div {
+.dotaz > div:first-child {
     display: flex;
     justify-content: space-between;
     gap: 20px;
 }
-.dotaz input, .dotaz textarea {
+.dotaz input, .dotaz textarea, .dotaz button {
     border: 0;
     padding: 15px;
     border-radius: 7px;
@@ -516,6 +506,29 @@ div.playBtn {
 }
 .dotaz textarea {
     resize: vertical;
+}
+.dotaz button {
+    width: max-content;
+    background-color: #fff;
+    cursor: pointer;
+}
+.dotaz button:hover {
+    background-color: #eee;
+}
+.dotaz > div:nth-of-type(2) {
+    display: flex;
+    justify-content: space-between;
+    color: #ABABAB;
+}
+.dotaz > div:nth-of-type(2) > div {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    gap: 35px;
+}
+.dotaz > div:nth-of-type(2) > div a, .dotaz > div:nth-of-type(2) > div svg {
+    color: #ABABAB;
+    height: 100%;
 }
 
 .infoBlock div {
@@ -598,10 +611,6 @@ div.playBtn {
     .cameraPhoto div.triangle {
         height: 150px;
     }
-    .stage span {
-        padding: 10px 20px;
-        font-size: 2.5em;
-    }
     #pageHead {
         padding: 180px 0 0;
     }
@@ -652,9 +661,6 @@ div.playBtn {
     }
     .cameraPhoto div.triangle {
         height: 110px;
-    }
-    .stage span {
-        font-size: 1.6em;
     }
     .section.prihlaska {
         flex-direction: column;
@@ -718,9 +724,6 @@ div.playBtn {
     }
     .applicationPoints li {
         margin-top: 40px;
-    }
-    .stage span {
-        font-size: 1.2em;
     }
     .videoExamples {
         display: flex;
