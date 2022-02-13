@@ -70,15 +70,15 @@
     left: 0;
     max-height: 245px;
     max-width: 45%;
-    transform: translate(-30%, 25%);
+    transform: translate(-30%, 25%) rotate(-10deg);
     animation: run-in 1.5s ease;
 }
 @keyframes run-in {
     0% {
-        transform: translate(-100%, 25%);
+        transform: translate(-100%, 25%) rotate(-10deg);
     }
     100% {
-        transform: translate(-30%, 25%);
+        transform: translate(-30%, 25%) rotate(-10deg);
     }
 }
 #pageHead .introduction {
