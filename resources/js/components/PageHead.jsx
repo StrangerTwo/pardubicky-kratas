@@ -6,7 +6,7 @@ const PageHead = () => {
     const [intro, setIntro] = useState(true);
 
     useEffect(() => {
-        const timeout = setTimeout(() => setIntro(false), 5000);
+        const timeout = setTimeout(() => setIntro(false), 7000);
         return (() => clearTimeout(timeout));
     })
     
