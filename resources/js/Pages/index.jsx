@@ -34,7 +34,7 @@ const HomePage = ({csrf_token}) => {
                 <div>
                     <Categories />
                     <div className={style.rewards} >
-                        <span><b>Ceny pro výherce v každé kategorii</b></span>
+                        <span style={{fontSize: 'x-large'}}><b>Ceny pro výherce v každé kategorii</b></span>
                         <ol>
                             <li>5.000,- Kč</li>
                             <li>3.000,- Kč</li>
