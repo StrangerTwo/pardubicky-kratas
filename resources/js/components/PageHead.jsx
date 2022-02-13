@@ -13,7 +13,7 @@ const PageHead = () => {
     return (
         <div id={style.pageHead}>
             {intro && (
-                <img id={style.presenting} src="/images/delta.svg" alt="Delta - střední škola informatiky a ekonomie"/>
+                <img id={style.presenting} src="/images/delta_presents.svg" alt="Delta - střední škola informatiky a ekonomie"/>
             )}
             <div className={style.introduction + (intro ? ` ${style.hidden}` : "")}>
                 <h1>Pardubický kraťas</h1>
