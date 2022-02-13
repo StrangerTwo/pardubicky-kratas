@@ -152,9 +152,13 @@ const HomePage = ({csrf_token}) => {
                             <input type="text" name="email" placeholder="Tvůj email"></input>
                         </div>
                         <textarea name="content" rows="6" placeholder="Popis problému..."></textarea>
-                        <div>
-                            <button type="submit">Odeslat</button>
-                            <img src="/images/delta.svg" width="100"/>
+                        <div className={style.submitRow}>
+                            <div>
+                                <button type="submit">Odeslat</button>
+                                <a href="https://www.delta-skola.cz/">
+                                    <img src="/images/delta.svg" width="100"/>
+                                </a>
+                            </div>
                             <div>
                                 <a href="https://www.instagram.com/pardubicky_kratas/">
                                     <FontAwesomeIcon icon={faInstagram} />

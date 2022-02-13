@@ -526,7 +526,13 @@ div.playBtn {
     height: 100%;
     gap: 35px;
 }
-.dotaz > div:nth-of-type(2) > div a, .dotaz > div:nth-of-type(2) > div svg {
+.submitRow > div:nth-child(1) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+}
+.submitRow > div:nth-child(2) a, .submitRow > div:nth-child(2) svg {
     color: #ABABAB;
     height: 100%;
 }
