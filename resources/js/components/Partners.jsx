@@ -26,7 +26,7 @@ const Partners = () => {
         },
         {
             name: 'Rychnovská 8',
-            image: '/images/rychnovska-8.png',
+            image: '/images/rychnovska-8.svg',
             text: 'Txt o partnerovy se mění s logem pratnera'
         }
     ];
@@ -44,7 +44,7 @@ const Partners = () => {
 
         if (!position) return 8;
 
-        return 42 + (position - 1) * 10;
+        return 45 + (position - 1) * 12;
     }
 
     return (
