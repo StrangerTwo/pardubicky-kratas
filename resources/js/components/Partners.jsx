@@ -21,7 +21,7 @@ const Partners = () => {
         },
         {
             name: 'Pardubický kraj',
-            image: '/images/pardubicky-kraj.png',
+            image: '/images/pardubicky-kraj.svg',
             text: 'Txt o partnerovy se mění s logem pratnera'
         },
         {
