@@ -5,13 +5,8 @@ import style from "../../css/Home.module.css"
 const Partners = () => {
     const partners = [
         {
-            name: 'FOMEI',
-            image: '/images/fomei.svg',
-            text: 'Txt o partnerovy se mění s logem pratnera'
-        },
-        {
-            name: 'Východočeské volné sdružení pro amatérský film a video, z.s.',
-            image: '/images/vcvsafv.png',
+            name: 'Pardubický kraj',
+            image: '/images/pardubicky-kraj.svg',
             text: 'Txt o partnerovy se mění s logem pratnera'
         },
         {
@@ -20,19 +15,19 @@ const Partners = () => {
             text: 'Txt o partnerovy se mění s logem pratnera'
         },
         {
-            name: 'Pardubický kraj',
-            image: '/images/pardubicky-kraj.svg',
+            name: 'FOMEI',
+            image: '/images/fomei.svg',
             text: 'Txt o partnerovy se mění s logem pratnera'
         },
         {
-            name: 'Rychnovská 8',
-            image: '/images/rychnovska-8.svg',
+            name: 'VčVSAFV a Rychnovská 8',
+            image: '/images/vcvsafv.png',
             text: 'Txt o partnerovy se mění s logem pratnera'
         }
     ];
 
 
-    const [selected, setSelected] = useState(partners.length - 1);
+    const [selected, setSelected] = useState(0);
 
     const select = (partner) => {
         setSelected(partners.indexOf(partner));
@@ -40,11 +35,12 @@ const Partners = () => {
 
     const getPosition = (partner) => {
         const index = partners.indexOf(partner);
-        const position = selected - index >= 0 ? selected - index : selected - index + partners.length;
+        if (index == selected) return 8;
+        
+        const position = index > selected ? index : index + 1;
 
-        if (!position) return 8;
 
-        return 45 + (position - 1) * 12;
+        return 50 + (position - 1) * 15;
     }
 
     return (

@@ -404,7 +404,7 @@ div.playBtn {
 .partner {
     position: absolute;
     bottom: 0;
-    width: 10%;
+    width: 12%;
     height: 30%;
     right: 50%;
     cursor: pointer;
@@ -413,8 +413,8 @@ div.playBtn {
     transition-timing-function: ease-in-out;
 }
 .partner.selected {
-    width: 30%;
-    height: 70%;
+    width: 38%;
+    height: 80%;
     right: 10%;
     z-index: 1;
 }
