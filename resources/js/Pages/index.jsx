@@ -14,7 +14,7 @@ import Partners from '../components/Partners'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faInstagram, faFacebook } from '@fortawesome/free-brands-svg-icons'
 
-const HomePage = () => {
+const HomePage = ({csrf_token}) => {
     
     return (
         <Layout>
@@ -146,6 +146,7 @@ const HomePage = () => {
                         </div>
                     </div>
                     <form className={style.dotaz} method="post" action="/send">
+                        <input type="hidden" name="_token" value={csrf_token}/>
                         <div>
                             <input type="text" name="subject" placeholder="Téma dotazu"></input>
                             <input type="text" name="email" placeholder="Tvůj email"></input>
@@ -155,7 +156,7 @@ const HomePage = () => {
                             <button type="submit">Odeslat</button>
                             <img src="/images/delta.svg" width="100"/>
                             <div>
-                                <a href="https://instagram.com">
+                                <a href="https://www.instagram.com/pardubicky_kratas/">
                                     <FontAwesomeIcon icon={faInstagram} />
                                 </a>
                                 <a href="https://facebook.com">

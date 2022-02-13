@@ -9,6 +9,8 @@ class PageController extends Controller
 {
     public function index()
     {
-        return Inertia::render('index');
+        return Inertia::render('index', [
+            'csrf_token' => csrf_token()
+        ]);
     }
 }

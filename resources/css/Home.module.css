@@ -490,7 +490,7 @@ div.playBtn {
     flex-direction: column;
     gap: 20px;
 }
-.dotaz > div:first-child {
+.dotaz > div:first-of-type {
     display: flex;
     justify-content: space-between;
     gap: 20px;
