@@ -5,11 +5,6 @@ import style from "../../css/Home.module.css"
 const Partners = () => {
     const partners = [
         {
-            name: 'Delta - střední škola informatiky a ekonomie',
-            image: '/images/delta.svg',
-            text: 'Txt o partnerovy se mění s logem pratnera'
-        },
-        {
             name: 'FOMEI',
             image: '/images/fomei.svg',
             text: 'Txt o partnerovy se mění s logem pratnera'
@@ -31,7 +26,7 @@ const Partners = () => {
         },
         {
             name: 'Rychnovská 8',
-            image: '/images/rychnovska-8.svg',
+            image: '/images/rychnovska-8.png',
             text: 'Txt o partnerovy se mění s logem pratnera'
         }
     ];

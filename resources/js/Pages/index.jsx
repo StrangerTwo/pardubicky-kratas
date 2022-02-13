@@ -53,6 +53,7 @@ const HomePage = () => {
                 <ApplicationPoints />
             </Section>
             <div className={style.stage}>
+                <span>Natoč krátký film a pojď soutěžit!</span>
             </div>
             <Section className={style.projekce} id="projekce">
                 <div>
