@@ -1,12 +1,21 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 
 import style from "../../css/Home.module.css"
 
 const PageHead = () => {
+    const [intro, setIntro] = useState(true);
 
+    useEffect(() => {
+        const timeout = setTimeout(() => setIntro(false), 5000);
+        return (() => clearTimeout(timeout));
+    })
+    
     return (
         <div id={style.pageHead}>
-            <div className={style.introduction}>
+            {intro && (
+                <img id={style.presenting} src="/images/delta.svg" alt="Delta - střední škola informatiky a ekonomie"/>
+            )}
+            <div className={style.introduction + (intro ? ` ${style.hidden}` : "")}>
                 <h1>Pardubický kraťas</h1>
                 <div className={style.infoShow}>
                     <div className={style.infoBlock}>
@@ -23,7 +32,7 @@ const PageHead = () => {
                     </div>
                 </div>
             </div>
-            <img className={style.logo} src="/images/transparent-kratas-logo.gif"/>
+            <img className={style.logo + (intro ? ` ${style.hidden}` : "")} src="/images/transparent-kratas-logo.gif"/>
             <img className={style.photographer} src="/images/photographer.png"/>
         </div>
     )

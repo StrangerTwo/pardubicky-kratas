@@ -71,20 +71,63 @@
     max-height: 245px;
     max-width: 45%;
     transform: translate(-30%, 25%);
+    animation: run-in 1.5s ease;
+}
+@keyframes run-in {
+    0% {
+        transform: translate(-100%, 25%);
+    }
+    100% {
+        transform: translate(-30%, 25%);
+    }
+}
+#pageHead .introduction {
+    padding: 0 100px 200px;
+    transform: translateX(-100%);
+    animation: pull-in 1s ease-out 1s forwards;
+}
+@keyframes pull-in {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: initial;
+    }
+}
+#presenting {
+    position: absolute;
+    top: 60%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    animation: presenting-out 5s cubic-bezier(1,0,1,.65) forwards;
+}
+@keyframes presenting-out {
+    0%, 85% {
+        transform: translate(-50%, -50%);
+        width: 40%;
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(720deg);
+        width: 0;
+    }
+}
+
+.hidden {
+    visibility: hidden !important;
+    animation: none !important;
+}
+
+.introduction h1 {
+    font-size: 4em;
+    margin: 0;
+    margin-bottom: 30px;
 }
 #pageHead .photographer {
     position: absolute;
     bottom: 0;
     right: 0;
     max-width: 50%;
-}
-#pageHead .introduction {
-    padding: 0 100px 200px; 
-}
-.introduction h1 {
-    font-size: 4em;
-    margin: 0;
-    margin-bottom: 30px;
 }
 
 .section {
