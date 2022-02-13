@@ -596,8 +596,10 @@ div.playBtn {
         font-size: 1.1em;
         padding: 0.15em;
     }
-    .categories li {
+    .categories {
         font-size: 1.6em;
+    }
+    .categories li {
         margin-top: 30px;
     }
     .applicationPoints li::marker, .applicationPoints span {
@@ -651,8 +653,8 @@ div.playBtn {
     .navigation span {
         font-size: 0.9em;
     }
-    .categories li {
-        font-size: 1.2em;
+    .categories {
+        font-size: 1.3em;
     }
     .section.kategorie .triangle {
         padding: 70px 20px 0;
@@ -717,8 +719,14 @@ div.playBtn {
     .section.soutez p {
         max-width: 100%;
     }
+    .categories {
+        font-size: 1.2em;
+    }
     .categories li {
-        margin-top: 30px;
+        margin-top: 15px;
+    }
+    .kategorie > div {
+        flex-direction: column-reverse;
     }
     .kategorie h2 {
         margin-bottom: 0;
