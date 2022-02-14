@@ -53,7 +53,6 @@
     display: flex;
     align-items: flex-end;
     padding: 300px 0 0;
-    overflow: hidden;
 }
 #pageHead::after {
     content: "";
@@ -127,8 +126,8 @@
 #pageHead .photographer {
     position: absolute;
     bottom: 0;
-    left: 50%;
-    height: 100%;
+    right: 0;
+    max-width: 50%;
 }
 
 .section {
