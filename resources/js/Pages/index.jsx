@@ -40,7 +40,7 @@ const HomePage = ({csrf_token}) => {
                             <li>3.000,- Kč</li>
                             <li>2.000,- Kč</li>
                         </ol>
-                        <p>Zvláštní cena partnera soutěže firmy FOMEI (poukazy, foto-video technika).</p>
+                        <p>Zvláštní cena FOMEI-poukazy, foto-video technika</p>
                     </div>
                 </div>
             </Section>

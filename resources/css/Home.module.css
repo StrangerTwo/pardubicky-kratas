@@ -22,7 +22,7 @@
     position: relative;
     text-decoration: none;
     text-transform: uppercase;
-    color: #D1D1D1;
+    color: #a5a5a5;
     font-family: "Sitka Heading", "Open Sans", "Helvetica Neue", sans-serif;
     font-size: 1.5em;
     cursor: pointer;
@@ -53,6 +53,7 @@
     display: flex;
     align-items: flex-end;
     padding: 300px 0 0;
+    overflow: hidden;
 }
 #pageHead::after {
     content: "";
@@ -126,8 +127,8 @@
 #pageHead .photographer {
     position: absolute;
     bottom: 0;
-    right: 0;
-    max-width: 50%;
+    left: 50%;
+    height: 100%;
 }
 
 .section {
