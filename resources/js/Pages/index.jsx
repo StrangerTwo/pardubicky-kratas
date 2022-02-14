@@ -40,7 +40,7 @@ const HomePage = ({csrf_token}) => {
                             <li>3.000,- Kč</li>
                             <li>2.000,- Kč</li>
                         </ol>
-                        <p>Zvláštní cena FOMEI-poukazy, foto-video technika</p>
+                        <p>Zvláštní cena partnera soutěže firmy FOMEI (poukazy, foto-video technika).</p>
                     </div>
                 </div>
             </Section>
@@ -133,7 +133,7 @@ const HomePage = ({csrf_token}) => {
                             <img src="/images/brun.jpg" alt="Richard Brun"/>
                             <div>
                                 <span className={style.name}>Richard Brun</span>
-                                <span>Tel.: +420 123 456 789</span>
+                                <span>Tel.: +420 466 611 173</span>
                                 <span>Email: info@pardubickykratas.cz</span>
                             </div>
                         </div>
@@ -141,7 +141,7 @@ const HomePage = ({csrf_token}) => {
                             <img src="/images/votavova.webp" alt="Gabriela Votavová"/>
                             <div>
                                 <span className={style.name}>Gabriela Votavová</span>
-                                <span>Tel.: +420 123 456 789</span>
+                                <span>Tel.: +420 466 611 173</span>
                                 <span>Email: info@pardubickykratas.cz</span>
                             </div>
                         </div>

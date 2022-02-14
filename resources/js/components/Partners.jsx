@@ -7,22 +7,22 @@ const Partners = () => {
         {
             name: 'VčVSAFV a Rychnovská 8',
             image: '/images/R8_a_VcVSAFV.svg',
-            text: 'Txt o partnerovy se mění s logem pratnera'
+            text: 'Východočeské volné sdružení pro amatérský film a video z.s. je  hlavní organizátor soutěže Rychnovská 8, nejstarší soutěže neprofesionálních filmů v ČR.'
         },
         {
             name: 'FOMEI',
             image: '/images/fomei.svg',
-            text: 'Txt o partnerovy se mění s logem pratnera'
+            text: 'Cena firmy FOMEI pro každou kategorii a marketingová spolupráce.'
         },
         {
             name: 'Magistrát města Pardubice',
             image: '/images/magistrat-mesta-pardubice.svg',
-            text: 'Txt o partnerovy se mění s logem pratnera'
+            text: 'Partner soutěže.'
         },
         {
             name: 'Pardubický kraj',
             image: '/images/pardubicky-kraj.svg',
-            text: 'Txt o partnerovy se mění s logem pratnera'
+            text: 'Záštitu přijal náměstek hejtmana Pardubického kraje a radní Pardubického kraje pro kulturu Ing. Roman Línek, MBA.'
         }
     ];
 
