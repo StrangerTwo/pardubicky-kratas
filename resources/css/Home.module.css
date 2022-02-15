@@ -386,6 +386,7 @@ div.playBtn {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 15px;
+    row-gap: 25px;
 }
 .porotce {
     display: flex;
@@ -727,9 +728,7 @@ div.playBtn {
     }
     .porotci {
         grid-template-columns: 1fr;
-    }
-    .porotce {
-        margin: 10px 0 !important;
+        row-gap: 15px;
     }
     .kontakty > div {
         align-self: center;
