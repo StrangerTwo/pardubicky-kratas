@@ -162,7 +162,7 @@ const HomePage = ({csrf_token}) => {
                                 <a href="https://www.instagram.com/pardubicky_kratas/">
                                     <FontAwesomeIcon icon={faInstagram} />
                                 </a>
-                                <a href="https://facebook.com">
+                                <a href="https://www.facebook.com/pardubickykratas">
                                     <FontAwesomeIcon icon={faFacebook} />
                                 </a>
                             </div>
