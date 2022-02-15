@@ -149,7 +149,7 @@
 }
 .section.soutez p {
     max-width: 60%;
-    line-height: 3;
+    line-height: 2;
 }
 
 .kategorie h2 {
@@ -291,6 +291,9 @@
 .applicationPoints li::marker, .applicationPoints span {
     font-size: 2.5em;
 }
+.applicationPoints span {
+    line-height: 2;
+}
 
 .stage {
     position: relative;
@@ -370,7 +373,7 @@ div.playBtn {
     margin: 60px 0 100px;
 }
 .porota p {
-    line-height: 3;
+    line-height: 2;
 }
 .porota > div {
     padding-left: 50px;
@@ -398,6 +401,7 @@ div.playBtn {
     flex-grow: 1;
     font-size: larger;
     padding: 1em 0;
+    line-height: 1.5;
 }
 .porotce span b {
     color: #ABABAB;
