@@ -159,10 +159,10 @@ const HomePage = ({csrf_token}) => {
                         <div className={style.submitRow}>
                             <button type="submit">Odeslat</button>
                             <div>
-                                <a href="https://www.instagram.com/pardubicky_kratas/">
+                                <a href="https://www.instagram.com/pardubicky_kratas/" target="_blank">
                                     <FontAwesomeIcon icon={faInstagram} />
                                 </a>
-                                <a href="https://www.facebook.com/pardubickykratas">
+                                <a href="https://www.facebook.com/pardubickykratas" target="_blank">
                                     <FontAwesomeIcon icon={faFacebook} />
                                 </a>
                             </div>
