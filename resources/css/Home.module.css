@@ -185,6 +185,9 @@
     flex-direction: column;
     align-items: center;
 }
+.prihlaska > div:first-child p {
+    margin: 0;
+}
 .prihlaska a {
     color: #0364B8;
 }
