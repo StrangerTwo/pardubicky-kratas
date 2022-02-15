@@ -128,6 +128,9 @@ const HomePage = ({csrf_token}) => {
             <Section className={style.kontakty} id="kontakty">
                 <h2>Kontakty</h2>
                 <div>
+                    <a href="https://www.delta-skola.cz/">
+                        <img src="/images/delta.svg" width="100"/>
+                    </a>
                     <div className={style.contacts}>
                         <div className={style.contact}>
                             <img src="/images/brun.jpg" alt="Richard Brun"/>
@@ -154,12 +157,7 @@ const HomePage = ({csrf_token}) => {
                         </div>
                         <textarea name="content" rows="6" placeholder="Popis problému..."></textarea>
                         <div className={style.submitRow}>
-                            <div>
-                                <button type="submit">Odeslat</button>
-                                <a href="https://www.delta-skola.cz/">
-                                    <img src="/images/delta.svg" width="100"/>
-                                </a>
-                            </div>
+                            <button type="submit">Odeslat</button>
                             <div>
                                 <a href="https://www.instagram.com/pardubicky_kratas/">
                                     <FontAwesomeIcon icon={faInstagram} />

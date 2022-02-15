@@ -494,6 +494,13 @@ div.playBtn {
     flex-grow: 1;
     width: 100%;
 }
+.kontakty > div > a {
+    display: flex;
+    align-items: center;
+}
+.kontakty > div > a img {
+    width: 250px;
+}
 .contacts {
     display: flex;
     flex-direction: column;
@@ -566,13 +573,7 @@ div.playBtn {
     height: 100%;
     gap: 35px;
 }
-.submitRow > div:nth-child(1) {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 40%;
-}
-.submitRow > div:nth-child(2) a, .submitRow > div:nth-child(2) svg {
+.submitRow > div a, .submitRow > div svg {
     color: #ABABAB;
     font-size: 35px;
 }
