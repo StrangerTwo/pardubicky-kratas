@@ -52,7 +52,7 @@ const HomePage = ({csrf_token}) => {
             <Section className={style.prihlaska} id="prihlaska">
                 <div>
                     <h2>Přihláška</h2>
-                    <span>Vyplň přihlášku jednoduše ve dvou krocích</span>
+                    <p>Vyplň přihlášku jednoduše ve dvou krocích</p>
                 </div>
                 <ApplicationPoints />
             </Section>
@@ -61,7 +61,7 @@ const HomePage = ({csrf_token}) => {
             <Section className={style.projekce} id="projekce">
                 <div>
                     <h2>Projekce</h2>
-                    <span>Projekce soutěžních studentských filmů budou probíhat online prostřednictvím videostreamu na našem videokanálu Delta Film</span>
+                    <p>Projekce soutěžních studentských filmů budou probíhat online prostřednictvím videostreamu na našem videokanálu Delta Film</p>
                 </div>
                 <div className={style.videoExamples}>
                     <div className={style.video}>
