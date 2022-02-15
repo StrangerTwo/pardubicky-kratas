@@ -147,6 +147,7 @@
 .section.soutez p {
     max-width: 60%;
     line-height: 3;
+    font-size: large;
 }
 
 .kategorie h2 {
