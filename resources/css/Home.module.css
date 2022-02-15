@@ -395,6 +395,7 @@ div.playBtn {
 }
 .porotce span {
     flex-grow: 1;
+    font-size: larger;
     padding: 1em 0;
 }
 .porotce span b {
