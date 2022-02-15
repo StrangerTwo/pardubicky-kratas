@@ -24,7 +24,7 @@ const PageHead = () => {
                     </div>
                     <div className={style.infoBlock}>
                         <div><b>Kdy?</b></div>
-                        <div><b>7.4.2022</b></div>
+                        <div><b>7.dubna 2022</b></div>
                     </div>
                     <div className={style.infoBlock}>
                         <div><b>Kde?</b></div>
