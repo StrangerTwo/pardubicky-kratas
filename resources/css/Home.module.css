@@ -385,7 +385,7 @@ div.playBtn {
 .porotci {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 5px;
+    column-gap: 15px;
 }
 .porotce {
     display: flex;
@@ -412,13 +412,6 @@ div.playBtn {
 .porotce .portrait img {
     height: 100%;
     width: 100%;
-}
-.porotce:nth-child(even) {
-    margin-top: 100px;
-    flex-direction: row-reverse;
-}
-.porotce:nth-child(odd) {
-    margin-bottom: 100px;
 }
 
 .partners {
