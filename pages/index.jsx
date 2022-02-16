@@ -28,7 +28,7 @@ const HomePage = () => {
                 <p>
                     Pardubický kraťas je nová studentská filmová soutěž studentů středních škol a druhého stupně základních škol.
                     Cílem tohoto projektu je nejenom vytvoření regionální soutěže krátkých studentských filmů s celostátním přesahem,
-                    ale i snaha <b>motivovat studenty k mediální tvůrčí činnosti</b> a <b>obohatit kulturní nabídku pardubického regionu</b>. 
+                    ale i snaha <strong>motivovat studenty k mediální tvůrčí činnosti</strong> a <strong>obohatit kulturní nabídku pardubického regionu</strong>. 
                 </p>
             </Section>
             <Section className={style.kategorie}>
@@ -38,7 +38,7 @@ const HomePage = () => {
                 <div>
                     <Categories />
                     <div className={style.rewards} >
-                        <span style={{fontSize: 'x-large'}}><b>Ceny pro výherce v každé kategorii</b></span>
+                        <span style={{fontSize: 'x-large'}}><strong>Ceny pro výherce v každé kategorii</strong></span>
                         <ol>
                             <li>5.000,- Kč</li>
                             <li>3.000,- Kč</li>
@@ -96,7 +96,7 @@ const HomePage = () => {
                                 <Image src="/images/peml.jpg" alt="MgA. Jan Peml" layout="fill"/>
                             </div>
                             <span>
-                                <b>MgA. Jan Peml</b> je střihač, kameraman a režisér. Je absolventem FAMU Praha. V současnosti vyučuje a vede pracovište Rozhlasová a televizní laboratoř na Institutu komunikačních studií a žurnalistiky UK FSV.
+                                <strong>MgA. Jan Peml</strong> je střihač, kameraman a režisér. Je absolventem FAMU Praha. V současnosti vyučuje a vede pracovište Rozhlasová a televizní laboratoř na Institutu komunikačních studií a žurnalistiky UK FSV.
                             </span>
                         </div>
                         <div className={style.porotce}>
@@ -104,7 +104,7 @@ const HomePage = () => {
                                 <Image src="/images/spitalsky.jpg" alt="Michal Špitálský" layout="fill"/>
                             </div>
                             <span>
-                                <b>Michal Špitálský</b> je student druhého ročníku oboru Film and TV Production na Northumbria University v anglickém Newcastlu. Ve volném čase pracuje na filmových dokumentech, spolupracuje na festivalu Jeden svět. Michal je absolventem naší školy.
+                                <strong>Michal Špitálský</strong> je student druhého ročníku oboru Film and TV Production na Northumbria University v anglickém Newcastlu. Ve volném čase pracuje na filmových dokumentech, spolupracuje na festivalu Jeden svět. Michal je absolventem naší školy.
                             </span>
                         </div>
                         <div className={style.porotce}>
@@ -112,7 +112,7 @@ const HomePage = () => {
                                 <Image src="/images/skrobak.jpg" alt="Ing. Martin Škrobák" layout="fill"/>
                             </div>
                             <span>
-                                <b>Ing. Martin Škrobák</b> je předseda Východočeského volného sdružení pro amatérský film a video z.s. a hlavní organizátor soutěže Rychnovská 8.
+                                <strong>Ing. Martin Škrobák</strong> je předseda Východočeského volného sdružení pro amatérský film a video z.s. a hlavní organizátor soutěže Rychnovská 8.
                             </span>
                         </div>
                         <div className={style.porotce}>
@@ -120,7 +120,7 @@ const HomePage = () => {
                                 <Image src="/images/trnka.jpg" alt="Mgr. et MgA. Pavel Trnka" layout="fill"/>
                             </div>
                             <span>
-                                <b>Mgr. et MgA. Pavel Trnka, Ph.D.</b> je výtvarník, režisér a autor animovaných filmů. Pracuje jako vysokoškolský pedagog na Pedagogické fakultě v Hradci Králové, kde garantuje řadu předmětů oboru Grafická tvorba a multimédia.
+                                <strong>Mgr. et MgA. Pavel Trnka, Ph.D.</strong> je výtvarník, režisér a autor animovaných filmů. Pracuje jako vysokoškolský pedagog na Pedagogické fakultě v Hradci Králové, kde garantuje řadu předmětů oboru Grafická tvorba a multimédia.
                             </span>
                         </div>
                     </div>

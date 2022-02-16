@@ -23,16 +23,16 @@ const PageHead = () => {
                 <h1>Pardubický kraťas</h1>
                 <div className={style.infoShow}>
                     <div className={style.infoBlock}>
-                        <div><b>Co?</b></div>
-                        <div>Studentská filmová soutěž,<br/>aneb &quot;<b>Filmová veselka na Deltě</b>&quot;</div>
+                        <div><strong>Co?</strong></div>
+                        <div>Studentská filmová soutěž,<br/>aneb &quot;<strong>Filmová veselka na Deltě</strong>&quot;</div>
                     </div>
                     <div className={style.infoBlock}>
-                        <div><b>Kdy?</b></div>
-                        <div><b>7. dubna 2022</b></div>
+                        <div><strong>Kdy?</strong></div>
+                        <div><strong>7. dubna 2022</strong></div>
                     </div>
                     <div className={style.infoBlock}>
-                        <div><b>Kde?</b></div>
-                        <div><b>Pardubice, DELTA - Střední škola informatiky</b></div>
+                        <div><strong>Kde?</strong></div>
+                        <div><strong>Pardubice, DELTA - Střední škola informatiky</strong></div>
                     </div>
                 </div>
             </div>
