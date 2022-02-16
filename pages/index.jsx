@@ -1,6 +1,7 @@
 import React from "react";
 
 import Image from 'next/image';
+import Link from 'next/link'
 
 import style from "../styles/Home.module.css"
 
@@ -131,9 +132,11 @@ const HomePage = () => {
             <Section className={style.kontakty} id="kontakty">
                 <h2>Kontakty</h2>
                 <div>
-                    <a href="https://www.delta-skola.cz/">
-                        <Image src="/images/delta.svg" alt="Delta - střední škola informatiky a ekonomie" width="250" height="112"/>
-                    </a>
+                    <Link href="https://www.delta-skola.cz/" passHref>
+                        <a>
+                            <Image src="/images/delta.svg" alt="Delta - střední škola informatiky a ekonomie" width="250" height="112"/>
+                        </a>
+                    </Link>
                     <div className={style.contacts}>
                         <div className={style.contact}>
                             <Image src="/images/brun.jpg" alt="Richard Brun" width="100" height="100"/>
@@ -161,12 +164,16 @@ const HomePage = () => {
                         <div className={style.submitRow}>
                             <button type="submit">Odeslat</button>
                             <div>
-                                <a href="https://www.instagram.com/pardubicky_kratas/" target="_blank" rel="noreferrer">
-                                    <FontAwesomeIcon icon={faInstagram} />
-                                </a>
-                                <a href="https://www.facebook.com/pardubickykratas" target="_blank" rel="noreferrer">
-                                    <FontAwesomeIcon icon={faFacebook} />
-                                </a>
+                                <Link href="https://www.instagram.com/pardubicky_kratas/" passHref>
+                                    <a target="_blank" rel="noreferrer">
+                                        <FontAwesomeIcon icon={faInstagram} />
+                                    </a>
+                                </Link>
+                                <Link href="https://www.facebook.com/pardubickykratas" passHref>
+                                    <a target="_blank" rel="noreferrer">
+                                        <FontAwesomeIcon icon={faFacebook} />
+                                    </a>
+                                </Link>
                             </div>
                         </div>
                     </form>
