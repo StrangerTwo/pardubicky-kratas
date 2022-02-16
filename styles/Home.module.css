@@ -71,6 +71,8 @@
   left: 0;
   max-height: 245px;
   max-width: 45%;
+  width: 50%;
+  height: 100%;
   transform: translate(-30%, 25%) rotate(-10deg);
   animation: run-in 1.5s ease;
 }
@@ -97,10 +99,11 @@
 }
 #presenting {
   position: absolute;
-  top: 60%;
+  top: 50%;
   left: 30%;
   transform: translate(-50%, -50%);
   width: 30%;
+  height: 100%;
   animation: presenting-out 3s cubic-bezier(0.5,0,1,.65) forwards;
 }
 @keyframes presenting-out {
@@ -128,8 +131,8 @@
   position: absolute;
   bottom: 0;
   right: 0;
-  max-width: 50%;
-  max-height: 100%;
+  width: 50%;
+  height: 100%;
 }
 
 .section {
@@ -409,6 +412,7 @@ div.playBtn {
   color: #ABABAB;
 }
 .porotce .portrait {
+  position: relative;
   height: 220px;
   width: 220px;
   flex: 0 0 220px;
@@ -473,7 +477,6 @@ div.playBtn {
 }
 .partner.selected img {
   bottom: 50%;
-  transform: translateY(50%);
 }
 
 .partners, .kontakty {

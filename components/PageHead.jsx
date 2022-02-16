@@ -1,5 +1,7 @@
 import React, {useState, useEffect} from 'react'
 
+import Image from 'next/image';
+
 import style from "../styles/Home.module.css"
 
 const PageHead = () => {
@@ -13,14 +15,16 @@ const PageHead = () => {
     return (
         <div id={style.pageHead}>
             {intro && (
-                <img id={style.presenting} src="/images/delta_presents.svg" alt="Delta - střední škola informatiky a ekonomie"/>
+                <div  id={style.presenting}>
+                    <Image src="/images/delta_presents.svg" alt="Delta - střední škola informatiky a ekonomie" layout="fill"/>
+                </div>
             )}
             <div className={style.introduction + (intro ? ` ${style.hidden}` : "")}>
                 <h1>Pardubický kraťas</h1>
                 <div className={style.infoShow}>
                     <div className={style.infoBlock}>
                         <div><b>Co?</b></div>
-                        <div>Studentská filmová soutěž,<br/>aneb "<b>Filmová veselka na Deltě</b>"</div>
+                        <div>Studentská filmová soutěž,<br/>aneb &quot;<b>Filmová veselka na Deltě</b>&quot;</div>
                     </div>
                     <div className={style.infoBlock}>
                         <div><b>Kdy?</b></div>
@@ -32,8 +36,12 @@ const PageHead = () => {
                     </div>
                 </div>
             </div>
-            <img className={style.logo + (intro ? ` ${style.hidden}` : "")} src="/images/transparent-kratas-logo.gif"/>
-            <img className={style.photographer} src="/images/photographer.png"/>
+            <div className={style.logo + (intro ? ` ${style.hidden}` : "")}>
+                <Image src="/images/transparent-kratas-logo.gif" alt="Pardubický kraťas" layout="fill" objectFit='contain'/>
+            </div>
+            <div className={style.photographer}>
+                <Image src="/images/photographer.png" alt="Fotograf" objectFit='contain' objectPosition='bottom right' width="1500" height="1500"/>
+            </div>
         </div>
     )
 }

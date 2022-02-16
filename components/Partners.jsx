@@ -1,4 +1,6 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState} from 'react'
+
+import Image from 'next/image';
 
 import style from "../styles/Home.module.css"
 
@@ -50,7 +52,7 @@ const Partners = () => {
                     <div onClick={() => select(partner)} className={style.partner + (selected == i ? ` ${style.selected}` : "" )} key={partner.name} style={{
                         right: `${getPosition(partner)}%`
                     }}>
-                        <img src={partner.image} alt={partner.name}/>
+                        <Image src={partner.image} alt={partner.name} layout="fill"/>
                     </div>
                 ))}
             </div>

@@ -1,5 +1,7 @@
 import React from 'react'
 
+import Link from 'next/link'
+
 import style from "../styles/Home.module.css"
 
 const ApplicationPoints = () => {
@@ -8,7 +10,9 @@ const ApplicationPoints = () => {
         <ol className={style.applicationPoints}>
             <li>
                 <span>Vyplň přihlášku</span>
-                <p><i><a href="/kratas_prihlaska.pdf">Stažení a vyplnění přihlášky</a></i></p>
+                <p>
+                    <i><a href="/kratas_prihlaska.pdf">Stažení a vyplnění přihlášky</a></i>
+                </p>
             </li>
             <li>
                 <span>Pošli své dílo</span>

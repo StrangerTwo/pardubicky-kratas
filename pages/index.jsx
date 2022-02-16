@@ -1,5 +1,7 @@
 import React from "react";
 
+import Image from 'next/image';
+
 import style from "../styles/Home.module.css"
 
 import Layout from '../layouts/index'
@@ -66,13 +68,13 @@ const HomePage = () => {
                 </div>
                 <div className={style.videoExamples}>
                     <div className={style.video}>
-                        <img src="/images/example_1.jpg" />
+                        <Image src="/images/example_1.jpg" alt="Example 1" layout="fill"/>
                         <div className={style.playBtn}>
                             <FontAwesomeIcon icon={faAngleRight} />
                         </div>
                     </div>
                     <div className={style.video}>
-                        <img src="/images/example_2.jpg" />
+                        <Image src="/images/example_2.jpg" alt="Example 2" layout="fill"/>
                         <div className={style.playBtn}>
                             <FontAwesomeIcon icon={faAngleRight} />
                         </div>
@@ -90,7 +92,7 @@ const HomePage = () => {
                     <div className={style.porotci}>
                         <div className={style.porotce}>
                             <div className={style.portrait}>
-                                <img src="/images/peml.jpg" alt="MgA. Jan Peml" />
+                                <Image src="/images/peml.jpg" alt="MgA. Jan Peml" layout="fill"/>
                             </div>
                             <span>
                                 <b>MgA. Jan Peml</b> je střihač, kameraman a režisér. Je absolventem FAMU Praha. V současnosti vyučuje a vede pracovište Rozhlasová a televizní laboratoř na Institutu komunikačních studií a žurnalistiky UK FSV.
@@ -98,7 +100,7 @@ const HomePage = () => {
                         </div>
                         <div className={style.porotce}>
                             <div className={style.portrait}>
-                                <img src="/images/spitalsky.jpg" alt="Michal Špitálský" />
+                                <Image src="/images/spitalsky.jpg" alt="Michal Špitálský" layout="fill"/>
                             </div>
                             <span>
                                 <b>Michal Špitálský</b> je student druhého ročníku oboru Film and TV Production na Northumbria University v anglickém Newcastlu. Ve volném čase pracuje na filmových dokumentech, spolupracuje na festivalu Jeden svět. Michal je absolventem naší školy.
@@ -106,7 +108,7 @@ const HomePage = () => {
                         </div>
                         <div className={style.porotce}>
                             <div className={style.portrait}>
-                                <img src="/images/skrobak.jpg" alt="Ing. Martin Škrobák" />
+                                <Image src="/images/skrobak.jpg" alt="Ing. Martin Škrobák" layout="fill"/>
                             </div>
                             <span>
                                 <b>Ing. Martin Škrobák</b> je předseda Východočeského volného sdružení pro amatérský film a video z.s. a hlavní organizátor soutěže Rychnovská 8.
@@ -114,7 +116,7 @@ const HomePage = () => {
                         </div>
                         <div className={style.porotce}>
                             <div className={style.portrait}>
-                                <img src="/images/trnka.jpg" alt="Mgr. et MgA. Pavel Trnka" />
+                                <Image src="/images/trnka.jpg" alt="Mgr. et MgA. Pavel Trnka" layout="fill"/>
                             </div>
                             <span>
                                 <b>Mgr. et MgA. Pavel Trnka, Ph.D.</b> je výtvarník, režisér a autor animovaných filmů. Pracuje jako vysokoškolský pedagog na Pedagogické fakultě v Hradci Králové, kde garantuje řadu předmětů oboru Grafická tvorba a multimédia.
@@ -130,11 +132,11 @@ const HomePage = () => {
                 <h2>Kontakty</h2>
                 <div>
                     <a href="https://www.delta-skola.cz/">
-                        <img src="/images/delta.svg" width="100"/>
+                        <Image src="/images/delta.svg" alt="Delta - střední škola informatiky a ekonomie" width="250" height="112"/>
                     </a>
                     <div className={style.contacts}>
                         <div className={style.contact}>
-                            <img src="/images/brun.jpg" alt="Richard Brun"/>
+                            <Image src="/images/brun.jpg" alt="Richard Brun" width="100" height="100"/>
                             <div>
                                 <span className={style.name}>Richard Brun</span>
                                 <span>Tel.: +420 466 611 173</span>
@@ -142,7 +144,7 @@ const HomePage = () => {
                             </div>
                         </div>
                         <div className={style.contact}>
-                            <img src="/images/votavova.webp" alt="Gabriela Votavová"/>
+                            <Image src="/images/votavova.webp" alt="Gabriela Votavová" width="100" height="100"/>
                             <div>
                                 <span className={style.name}>Gabriela Votavová</span>
                                 <span>Tel.: +420 466 611 173</span>
@@ -159,10 +161,10 @@ const HomePage = () => {
                         <div className={style.submitRow}>
                             <button type="submit">Odeslat</button>
                             <div>
-                                <a href="https://www.instagram.com/pardubicky_kratas/" target="_blank">
+                                <a href="https://www.instagram.com/pardubicky_kratas/" target="_blank" rel="noreferrer">
                                     <FontAwesomeIcon icon={faInstagram} />
                                 </a>
-                                <a href="https://www.facebook.com/pardubickykratas" target="_blank">
+                                <a href="https://www.facebook.com/pardubickykratas" target="_blank" rel="noreferrer">
                                     <FontAwesomeIcon icon={faFacebook} />
                                 </a>
                             </div>
