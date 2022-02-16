@@ -52,7 +52,7 @@
   position: relative;
   display: flex;
   align-items: flex-end;
-  padding: 200px 0 0;
+  padding: 170px 0 350px;
   margin-top: 150px;
 }
 #pageHead::after {
@@ -73,7 +73,7 @@
   max-width: 45%;
   width: 50%;
   height: 100%;
-  transform: translate(-35%, 25%) rotate(-10deg);
+  transform: translate(-36%, 25%) rotate(-10deg);
   animation: run-in 1.5s ease;
 }
 @keyframes run-in {
@@ -85,7 +85,10 @@
   }
 }
 #pageHead .introduction {
-  padding: 0 100px 200px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 0 100px 260px;
   transform: translateX(-100%);
   animation: pull-in 1s ease-out 1s forwards;
 }
@@ -673,7 +676,7 @@ div.playBtn {
       height: 150px;
   }
   #pageHead {
-      padding: 180px 0 0;
+      padding: 170px 0 350px;
       margin-top: 50px;
   }
   .porotce {
