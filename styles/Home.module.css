@@ -52,7 +52,7 @@
   position: relative;
   display: flex;
   align-items: flex-end;
-  padding: 300px 0 0;
+  padding: 200px 0 0;
   margin-top: 150px;
 }
 #pageHead::after {
