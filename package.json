@@ -2,9 +2,9 @@
   "name": "pardubice-mhd",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 5301",
     "build": "next build",
-    "start": "next start",
+    "start": "next start -p 5301",
     "lint": "next lint"
   },
   "dependencies": {
