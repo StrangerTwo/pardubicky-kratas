@@ -69,13 +69,13 @@ const HomePage = () => {
                 </div>
                 <div className={style.videoExamples}>
                     <div className={style.video}>
-                        <Image src="/images/example_1.jpg" alt="Example 1" layout="fill"/>
+                        <Image src="/images/example_1.jpg" alt="Example 1" width="700" height="466" />
                         <div className={style.playBtn}>
                             <FontAwesomeIcon icon={faAngleRight} />
                         </div>
                     </div>
                     <div className={style.video}>
-                        <Image src="/images/example_2.jpg" alt="Example 2" layout="fill"/>
+                        <Image src="/images/example_2.jpg" alt="Example 2" width="700" height="466" />
                         <div className={style.playBtn}>
                             <FontAwesomeIcon icon={faAngleRight} />
                         </div>
