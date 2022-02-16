@@ -132,11 +132,14 @@ const HomePage = () => {
             <Section className={style.kontakty} id="kontakty">
                 <h2>Kontakty</h2>
                 <div>
-                    <Link href="https://www.delta-skola.cz/" passHref>
-                        <a>
-                            <Image src="/images/delta.svg" alt="Delta - střední škola informatiky a ekonomie" width="250" height="112"/>
-                        </a>
-                    </Link>
+                    <div className={style.deltaKontakt}>
+                        <Link href="https://www.delta-skola.cz/" passHref>
+                            <a>
+                                <Image src="/images/delta.svg" alt="Delta - střední škola informatiky a ekonomie" width="250" height="112"/>
+                            </a>
+                        </Link>
+                        <p>Ke Kamenci 151 530 03 Pardubice</p>
+                    </div>
                     <div className={style.contacts}>
                         <div className={style.contact}>
                             <Image src="/images/brun.jpg" alt="Richard Brun" width="100" height="100"/>

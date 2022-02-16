@@ -517,6 +517,11 @@ div.playBtn {
 .kontakty > div > a img {
   width: 250px;
 }
+.deltaKontakt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .contacts {
   display: flex;
   flex-direction: column;
