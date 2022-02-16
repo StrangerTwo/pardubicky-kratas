@@ -9,6 +9,7 @@ const Layout = ({children}) => {
         <>
         
         <Head>
+            <title>Pardubický kraťas</title>
             <meta name="description" content="Pardubický kraťas je nová studentská filmová soutěž studentů středních škol a druhého stupně základních škol s cílem motivovat studenty k mediální tvůrčí činnosti a obohatit kulturní nabídku pardubického regionu."/>
             {/* Global Site Tag (gtag.js) - Google Analytics */}
             <script
