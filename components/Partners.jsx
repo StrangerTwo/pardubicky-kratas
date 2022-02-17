@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 
 import Image from 'next/image';
 
@@ -28,11 +28,28 @@ const Partners = () => {
         }
     ];
 
-
     const [selected, setSelected] = useState(partners.length - 1);
+    const [autoInterval, setAutoInterval] = useState(0);
+
+    useEffect(() => {
+        setupAutoInterval();
+        return () => {
+            clearInterval(autoInterval);
+        }
+    }, [])
+
+    const setupAutoInterval = () => {
+        const interval = setInterval(() => {
+            setSelected(prev => prev + 1 == partners.length ? 0 : prev + 1)
+        }, 3000);
+
+        setAutoInterval(interval);
+    }
 
     const select = (partner) => {
+        clearInterval(autoInterval);
         setSelected(partners.indexOf(partner));
+        setTimeout(setupAutoInterval, 7000);    // Celkem 10s na přečtení, 7000 + 3000 interval
     }
 
     const getPosition = (partner) => {
