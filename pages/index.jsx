@@ -69,13 +69,13 @@ const HomePage = () => {
                 </div>
                 <div className={style.videoExamples}>
                     <div className={style.video}>
-                        <Image src="/images/example_1.jpg" alt="Example 1" width="700" height="466" />
+                        <Image src="/images/example_1.jpg" alt="Example 1" width="1400" height="932" />
                         <div className={style.playBtn}>
                             <FontAwesomeIcon icon={faAngleRight} />
                         </div>
                     </div>
                     <div className={style.video}>
-                        <Image src="/images/example_2.jpg" alt="Example 2" width="700" height="466" />
+                        <Image src="/images/example_2.jpg" alt="Example 2" width="1400" height="932" />
                         <div className={style.playBtn}>
                             <FontAwesomeIcon icon={faAngleRight} />
                         </div>
@@ -158,7 +158,7 @@ const HomePage = () => {
                             </div>
                         </div>
                     </div>
-                    <form className={style.dotaz} method="post" action="/send">
+                    <form className={style.dotaz} method="post" action="/api/send">
                         <div>
                             <input type="text" name="subject" placeholder="Téma dotazu"></input>
                             <input type="text" name="email" placeholder="Tvůj email"></input>

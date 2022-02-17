@@ -73,7 +73,7 @@
   max-width: 45%;
   width: 50%;
   height: 100%;
-  transform: translate(-36%, 25%) rotate(-10deg);
+  transform: translate(-19vw, 25%) rotate(-10deg);
   animation: run-in 1.5s ease;
 }
 @keyframes run-in {
