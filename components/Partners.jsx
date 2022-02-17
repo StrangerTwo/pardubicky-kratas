@@ -29,27 +29,30 @@ const Partners = () => {
     ];
 
     const [selected, setSelected] = useState(partners.length - 1);
-    const [autoInterval, setAutoInterval] = useState(0);
+    
+    const animationRef = React.useRef()
+    const nextTimeRef = React.useRef(Date.now() + 3000);
 
     useEffect(() => {
-        setupAutoInterval();
-        return () => {
-            clearInterval(autoInterval);
-        }
+        animationRef.current = requestAnimationFrame(animate);
+        return () => cancelAnimationFrame(animationRef.current);
     }, [])
 
-    const setupAutoInterval = () => {
-        clearInterval(autoInterval);
-        const interval = setInterval(() => {
-            setSelected(prev => prev + 1 == partners.length ? 0 : prev + 1)
-        }, 3000);
+    const animate = time => {
+        if (Date.now() >= nextTimeRef.current) {
+            setNextPartner();
+            nextTimeRef.current = Date.now() + 3000;
+        }
+        animationRef.current = requestAnimationFrame(animate);
+    }
 
-        setAutoInterval(interval);
+    const setNextPartner = () => {
+        setSelected(prev => prev + 1 == partners.length ? 0 : prev + 1);
     }
 
     const select = (partner) => {
         setSelected(partners.indexOf(partner));
-        setTimeout(setupAutoInterval, 7000);    // Celkem 10s na přečtení, 7000 + 3000 interval
+        nextTimeRef.current = Date.now() + 10000;
     }
 
     const getPosition = (partner) => {
