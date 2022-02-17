@@ -12,7 +12,7 @@ const ApplicationPoints = () => {
                 <span>Vyplň přihlášku</span>
                 <p>
                     <Link href="/kratas_prihlaska.pdf" passHref>
-                        <i><a>Stažení a vyplnění přihlášky</a></i>
+                        <a><i>Stažení a vyplnění přihlášky</i></a>
                     </Link>
                 </p>
             </li>
