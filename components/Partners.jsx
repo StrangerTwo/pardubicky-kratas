@@ -36,6 +36,7 @@ const Partners = () => {
     useEffect(() => {
         animationRef.current = requestAnimationFrame(animate);
         return () => cancelAnimationFrame(animationRef.current);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
     const animate = time => {
