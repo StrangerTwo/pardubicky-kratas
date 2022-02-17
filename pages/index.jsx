@@ -167,7 +167,7 @@ const HomePage = () => {
                         <div className={style.submitRow}>
                             <button type="submit">Odeslat</button>
                             <div>
-                                <Link href="https://www.instagram.com/pardubicky_kratas/" passHref>
+                                <Link href="https://www.instagram.com/pardubickykratas/" passHref>
                                     <a target="_blank" rel="noreferrer">
                                         <FontAwesomeIcon icon={faInstagram} />
                                     </a>
