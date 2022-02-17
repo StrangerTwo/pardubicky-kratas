@@ -39,6 +39,7 @@ const Partners = () => {
     }, [])
 
     const setupAutoInterval = () => {
+        clearInterval(autoInterval);
         const interval = setInterval(() => {
             setSelected(prev => prev + 1 == partners.length ? 0 : prev + 1)
         }, 3000);
@@ -47,7 +48,6 @@ const Partners = () => {
     }
 
     const select = (partner) => {
-        clearInterval(autoInterval);
         setSelected(partners.indexOf(partner));
         setTimeout(setupAutoInterval, 7000);    // Celkem 10s na přečtení, 7000 + 3000 interval
     }
