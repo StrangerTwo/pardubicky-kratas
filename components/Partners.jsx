@@ -9,7 +9,7 @@ const Partners = () => {
         {
             name: 'VčVSAFV a Rychnovská 8',
             image: '/images/R8_a_VcVSAFV.svg',
-            text: 'Východočeské volné sdružení pro amatérský film a video z.s. je  hlavní organizátor soutěže Rychnovská 8, nejstarší soutěže neprofesionálních filmů v ČR.'
+            text: 'Východočeské&nbsp;volné&nbsp;sdružení&nbsp;pro&nbsp;amatérský&nbsp;film&nbsp;a&nbsp;video&nbsp;z.s. je  hlavní organizátor soutěže Rychnovská&nbsp;8, nejstarší soutěže neprofesionálních filmů v ČR.'
         },
         {
             name: 'FOMEI',
@@ -24,7 +24,7 @@ const Partners = () => {
         {
             name: 'Pardubický kraj',
             image: '/images/pardubicky-kraj.svg',
-            text: 'Záštitu přijal náměstek hejtmana Pardubického kraje a radní Pardubického kraje pro kulturu Ing. Roman Línek, MBA.'
+            text: 'Záštitu přijal náměstek hejtmana Pardubického kraje a radní Pardubického kraje pro kulturu Ing.&nbsp;Roman&nbsp;Línek,&nbsp;MBA.'
         }
     ];
 
@@ -59,7 +59,7 @@ const Partners = () => {
             <div className={style.partnerDetail}>
                 <h2>Partneři</h2>
                 <span className={style.name}>{partners[selected].name}</span>
-                <p>{partners[selected].text}</p>
+                <p dangerouslySetInnerHTML={{ __html: partners[selected].text}} />
             </div>
         </>
     )
