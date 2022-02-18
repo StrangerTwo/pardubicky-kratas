@@ -64,8 +64,8 @@ const HomePage = () => {
             </div>
             <Section className={style.projekce} id="projekce">
                 <div>
-                    <h2>Projekce</h2>
-                    <p>Projekce soutěžních studentských filmů budou probíhat online prostřednictvím videostreamu na našem videokanálu Delta Film</p>
+                    <h2>Projekce a slavnostní vyhlášení</h2>
+                    <p>Projekce a slavnostní vyhlášení soutěžních filmů budou probíhat online prostřednictvím videostreamu na našem videokanálu Delta Film</p>
                 </div>
                 <div className={style.videoExamples}>
                     <div className={style.video}>
