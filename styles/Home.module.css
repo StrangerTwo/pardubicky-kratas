@@ -198,13 +198,15 @@
 .prihlaska > div:first-child p {
   margin: 0;
 }
-.prihlaska a {
+.prihlaska a, .propozice {
   color: #0364B8;
 }
-.prihlaska a:visited {
+.prihlaska a:visited, .propozice:visited {
   color: #7273AA;
 }
-
+.propozice {
+  font-size: 1.5em;
+}
 .kategorie > div {
   display: flex;
   align-items: center;
@@ -220,7 +222,7 @@
   font-size: 1.6em;
   width: max-content;
 }
-.categories {
+.categories ul {
   font-size: 2em;
 }
 .categories li {
@@ -669,7 +671,7 @@ div.playBtn {
       font-size: 1.1em;
       padding: 0.15em;
   }
-  .categories {
+  .categories ul {
       font-size: 1.6em;
   }
   .categories li {
@@ -730,7 +732,7 @@ div.playBtn {
   .navigation span {
       font-size: 0.9em;
   }
-  .categories {
+  .categories ul {
       font-size: 1.3em;
   }
   .section.kategorie .triangle {
@@ -807,7 +809,7 @@ div.playBtn {
   .section.soutez p {
       max-width: 100%;
   }
-  .categories {
+  .categories ul {
       font-size: 1.2em;
   }
   .categories li {
