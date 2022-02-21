@@ -14,7 +14,7 @@ const Partners = () => {
         {
             name: 'FOMEI',
             image: '/images/fomei.svg',
-            text: 'Cena firmy FOMEI pro každou kategorii a marketingová spolupráce.'
+            text: 'Jeden z největších výrobců foto a video techniky v ČR. Marketingová spolupráce a ceny do soutěže.'
         },
         {
             name: 'Magistrát města Pardubice',
