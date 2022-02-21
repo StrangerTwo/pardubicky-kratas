@@ -8,7 +8,7 @@ const PageHead = () => {
     const [intro, setIntro] = useState(true);
 
     useEffect(() => {
-        const timeout = setTimeout(() => setIntro(false), 3000);
+        const timeout = setTimeout(() => setIntro(false), 1500);
         return (() => clearTimeout(timeout));
     })
     

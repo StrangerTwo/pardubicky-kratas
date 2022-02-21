@@ -17,8 +17,17 @@ const ApplicationPoints = () => {
                 </p>
             </li>
             <li>
-                <span>Pošli své dílo</span>
-                <p>Datové soubory společně s elektronickou verzí přihlášky filmu zasílej prostřednictvím datové služby (např. přes <a href="https://www.uschovna.cz/">www.uschovna.cz</a>) na e-mail <strong>info@pardubickykratas.cz</strong></p>
+                <span>Nahraj své dílo na úschovnu</span>
+                <p>Datové soubory filmu nahraj na internet (např. na <a href="https://www.uschovna.cz/">www.uschovna.cz</a>)</p>
+            </li>
+            <li>
+                <span>Pošli přihlášku emailem</span>
+                <p>Elektronickou verzi přihlášky zašli na e-mail <Link href="mailto:info@pardubickykratas.cz" passHref>
+                        <a>
+                            <strong>info@pardubickykratas.cz</strong>
+                        </a>
+                    </Link>
+                </p>
             </li>
         </ol>
     )
