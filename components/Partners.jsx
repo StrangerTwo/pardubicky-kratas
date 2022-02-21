@@ -9,7 +9,7 @@ const Partners = () => {
         {
             name: 'VčVSAFV a Rychnovská 8',
             image: '/images/R8_a_VcVSAFV.svg',
-            text: 'Východočeské&nbsp;volné&nbsp;sdružení&nbsp;pro&nbsp;amatérský&nbsp;film&nbsp;a&nbsp;video&nbsp;z.s. je  hlavní organizátor soutěže Rychnovská&nbsp;8, nejstarší soutěže neprofesionálních filmů v ČR.'
+            text: 'Východočeské volné sdružení pro amatérský film a video z.s. je  hlavní organizátor soutěže Rychnovská&nbsp;8, nejstarší soutěže neprofesionálních filmů v ČR.'
         },
         {
             name: 'FOMEI',
