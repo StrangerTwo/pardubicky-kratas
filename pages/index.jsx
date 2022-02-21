@@ -56,7 +56,7 @@ const HomePage = () => {
             <Section className={style.prihlaska} id="prihlaska">
                 <div>
                     <h2>Přihláška</h2>
-                    <p>Vyplň přihlášku jednoduše ve třech krocích</p>
+                    <p>Vyplň přihlášku jednoduše ve třech krocích.</p>
                 </div>
                 <ApplicationPoints />
             </Section>

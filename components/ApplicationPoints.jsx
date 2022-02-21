@@ -18,7 +18,7 @@ const ApplicationPoints = () => {
             </li>
             <li>
                 <span>Nahraj své dílo na úschovnu</span>
-                <p>Datové soubory filmu nahraj na internet (např. na <a href="https://www.uschovna.cz/">www.uschovna.cz</a>)</p>
+                <p>Datové soubory filmu nahraj na internet (např. na <a href="https://www.uschovna.cz/">www.uschovna.cz</a>).</p>
             </li>
             <li>
                 <span>Pošli přihlášku emailem</span>
@@ -26,7 +26,7 @@ const ApplicationPoints = () => {
                         <a>
                             <strong>info@pardubickykratas.cz</strong>
                         </a>
-                    </Link>
+                    </Link>.
                 </p>
             </li>
         </ol>
