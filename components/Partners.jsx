@@ -19,7 +19,7 @@ const Partners = () => {
         {
             name: 'Magistrát města Pardubice',
             image: '/images/magistrat-mesta-pardubice.svg',
-            text: 'Partner soutěže.'
+            text: 'Záštitu přijal primátor statutárního města Pardubice Ing.&nbsp;Martin&nbsp;Charvát'
         },
         {
             name: 'Pardubický kraj',

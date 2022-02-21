@@ -26,7 +26,7 @@ const HomePage = () => {
             <Section id="soutez" className={style.soutez}>
                 <h2>O soutěži</h2>
                 <p>
-                    Pardubický kraťas je nová studentská filmová soutěž studentů středních škol a druhého stupně základních škol.
+                    Pardubický kraťas je nová studentská <strong>filmová soutěž studentů středních škol</strong> a žáků druhého stupně základních škol.
                     Cílem tohoto projektu je nejenom vytvoření regionální soutěže krátkých studentských filmů s celostátním přesahem,
                     ale i snaha <strong>motivovat studenty k mediální tvůrčí činnosti</strong> a <strong>obohatit kulturní nabídku pardubického regionu</strong>. 
                 </p>
