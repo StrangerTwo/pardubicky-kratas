@@ -56,7 +56,7 @@ const HomePage = () => {
             <Section className={style.prihlaska} id="prihlaska">
                 <div>
                     <h2>Přihláška</h2>
-                    <p>Vyplň přihlášku jednoduše ve třech krocích.</p>
+                    <p>Vyplň přihlášku jednoduše ve třech krocích a odešli do <strong className={style.applicationClosing}>31.3.2022&nbsp;23:59:59</strong>!</p>
                 </div>
                 <ApplicationPoints />
             </Section>

@@ -204,6 +204,11 @@
 .prihlaska a:visited, .propozice:visited {
   color: #7273AA;
 }
+.applicationClosing {
+  font-family: Arial;
+  color: #0364B8;
+}
+
 .propozice {
   font-size: 1.5em;
 }
