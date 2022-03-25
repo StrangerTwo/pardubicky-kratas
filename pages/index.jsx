@@ -145,7 +145,7 @@ const HomePage = () => {
                             <Image src="/images/brun.jpg" alt="Richard Brun" width="100" height="100"/>
                             <div>
                                 <span className={style.name}>Richard Brun</span>
-                                <span>Tel.: +420 466 611 173</span>
+                                <span>Tel.: +420 797 662 523</span>
                                 <span>Email: info@pardubickykratas.cz</span>
                             </div>
                         </div>
@@ -153,7 +153,7 @@ const HomePage = () => {
                             <Image src="/images/votavova.webp" alt="Gabriela Votavová" width="100" height="100"/>
                             <div>
                                 <span className={style.name}>Gabriela Votavová</span>
-                                <span>Tel.: +420 466 611 173</span>
+                                <span>Tel.: +420 732 387 584</span>
                                 <span>Email: info@pardubickykratas.cz</span>
                             </div>
                         </div>
