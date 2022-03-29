@@ -26,6 +26,19 @@ const Layout = ({children}) => {
                 `,
                 }}
             />
+            {/* Global site tag (gtag.js) - Google Analytics */}
+            <script async src={"https://www.googletagmanager.com/gtag/js?id=UA-224041325-1"}/>
+            <script
+                dangerouslySetInnerHTML={{
+                __html: `
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+
+                    gtag('config', 'UA-224041325-1');
+                `,
+            }}/>
+
         </Head>
         <Navigation />
         <main>
