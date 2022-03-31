@@ -1,4 +1,5 @@
 import React, {useState, useEffect, useRef} from 'react'
+import Link from 'next/link'
 
 import style from "../styles/Home.module.css"
 
@@ -29,7 +30,7 @@ const Navigation = () => {
             <span onClick={() => scrollTo("#kategorie")}>Kategorie</span>
             <span onClick={() => scrollTo("#prihlaska")}>Přihláška</span>
             <span onClick={() => scrollTo("#projekce")}>Projekce</span>
-            <span onClick={() => scrollTo("#workshop")}>Workshop</span>
+            <span><Link href="/workshop" passHref><a>Workshop</a></Link></span>
             <span onClick={() => scrollTo("#vyhodnoceni")}>Vyhodnocení</span>
             <span onClick={() => scrollTo("#partneri")}>Partneři</span>
             <span onClick={() => scrollTo("#kontakty")}>Kontakty</span>

@@ -21,7 +21,7 @@ import { faAngleRight } from '@fortawesome/free-solid-svg-icons'
 const HomePage = () => {
     
     return (
-        <Layout>
+        <Layout navigation={true} title="Pardubický kraťas">
             <PageHead/>
             <Section id="soutez" className={style.soutez}>
                 <h2>O soutěži</h2>
