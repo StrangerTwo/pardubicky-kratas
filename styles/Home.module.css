@@ -890,6 +890,9 @@ div.playBtn {
       margin-top: 100px;
       gap: 70px;
   }
+  .video {
+    width: 100%;
+  }
   .cameraPhoto div.triangle {
       height: 80px;
   }
