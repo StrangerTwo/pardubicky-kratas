@@ -68,18 +68,9 @@ const HomePage = () => {
                     <p>Projekce a slavnostní vyhlášení soutěžních filmů budou probíhat online prostřednictvím videostreamu na našem videokanálu Delta Film.</p>
                 </div>
                 <div className={style.videoExamples}>
-                    <div className={style.video}>
-                        <Image src="/images/example_1.jpg" alt="Example 1" width="1400" height="932" />
-                        <div className={style.playBtn}>
-                            <FontAwesomeIcon icon={faAngleRight} />
-                        </div>
-                    </div>
-                    <div className={style.video}>
-                        <Image src="/images/example_2.jpg" alt="Example 2" width="1400" height="932" />
-                        <div className={style.playBtn}>
-                            <FontAwesomeIcon icon={faAngleRight} />
-                        </div>
-                    </div>
+                    <iframe className={style.video} width="560" height="315" src="https://www.youtube.com/embed/XuFFK0HWbXg" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                    <iframe className={style.video} width="560" height="315" src="https://www.youtube.com/embed/U8Rn-jUFG-E" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                    <iframe className={style.video} width="560" height="315" src="https://www.youtube.com/embed/_WB5bTaqaJ0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                 </div>
             </Section>
             <Section className={style.porota} id="vyhodnoceni">

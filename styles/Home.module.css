@@ -364,17 +364,10 @@
 .videoExamples {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
   justify-content: space-around;
   margin-top: 80px;
-}
-.videoExamples div.video {
-  position: relative;
-  cursor: pointer;
-  width: 40%;
-}
-.videoExamples div.video img {
-  width: 100%;
-  filter: blur(2px);
 }
 
 div.playBtn {
@@ -893,13 +886,9 @@ div.playBtn {
       margin-top: 40px;
   }
   .videoExamples {
-      display: flex;
       flex-direction: column;
       margin-top: 100px;
       gap: 70px;
-  }
-  .videoExamples div.video {
-      width: 100%;
   }
   .cameraPhoto div.triangle {
       height: 80px;
