@@ -70,7 +70,7 @@ const HomePage = () => {
                 <div className={style.videoExamples}>
                     <iframe className={style.video} width="560" height="315" src="https://www.youtube.com/embed/XuFFK0HWbXg" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                     <iframe className={style.video} width="560" height="315" src="https://www.youtube.com/embed/U8Rn-jUFG-E" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-                    <iframe className={style.video} width="560" height="315" src="https://www.youtube.com/embed/_WB5bTaqaJ0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                    <iframe className={style.video} width="560" height="315" src="https://www.youtube.com/embed/4zGrauledCg" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                 </div>
             </Section>
             <Section className={style.porota} id="vyhodnoceni">
