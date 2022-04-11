@@ -31,7 +31,7 @@ const Navigation = () => {
             <span onClick={() => scrollTo("#prihlaska")}>Přihláška</span>
             <span onClick={() => scrollTo("#projekce")}>Projekce</span>
             <span><Link href="/workshop" passHref><a>Workshop</a></Link></span>
-            <span><Link href="/vyhodnoceni" passHref><a>Vyhodnocení</a></Link></span>
+            <span onClick={() => scrollTo("#vyhodnoceni")}>Vyhodnocení</span>
             <span onClick={() => scrollTo("#partneri")}>Partneři</span>
             <span onClick={() => scrollTo("#kontakty")}>Kontakty</span>
         </nav>
