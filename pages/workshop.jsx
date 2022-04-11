@@ -6,9 +6,7 @@ import Link from 'next/link'
 import style from "../styles/Home.module.css"
 
 import Layout from '../layouts/index'
-import PageHead from '../components/PageHead'
 import Section from '../components/Section'
-import Footer from '../components/Footer'
 
 const HomePage = () => {
     

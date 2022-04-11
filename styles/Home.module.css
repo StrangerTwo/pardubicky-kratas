@@ -492,7 +492,7 @@ div.playBtn {
   bottom: 50%;
 }
 
-.workshop {
+.workshop, .vyhodnoceni {
   font-family: Poppins, sans-serif;
 }
 .workshop em {
@@ -520,6 +520,46 @@ div.playBtn {
   flex-grow: 1;
   text-align: center;
 }
+.vyhodnoceni .categories, .vyhodnoceni .awards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.vyhodnoceni .category, .vyhodnoceni .award{
+  margin: 10px 20px;
+  padding: 20px;
+  border-radius: 15px;
+  border: 2px solid #2A2734;
+  background-color: #1D1A27;
+}
+.vyhodnoceni .winners {
+  list-style: none;
+  margin: 0 0 0 10px;
+  padding: 0;
+}
+.vyhodnoceni .winners li {
+  margin-top: 10px;
+  display: flex;
+}
+.vyhodnoceni .winners li > div {
+  width: 0;
+  flex-grow: 1;
+}
+.vyhodnoceni .position {
+  margin-right: 15px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.vyhodnoceni em {
+  font-style: normal;
+  text-decoration: underline;
+}
+.vyhodnoceni .award p {
+  font-size: 1em;
+}
+.vyhodnoceni h3 {
+  font-size: 2.2em;
+  text-align: center;
+}
 .instructor {
   border-radius: 50%;
   overflow: hidden;
@@ -530,14 +570,19 @@ div.playBtn {
 .backToIndex {
   font-weight: bold;
   display: block;
-  margin: 0 auto;
+  margin: 50px auto 0;
   padding: 15px;
-  background-color: #999;
+  border: 2px solid #2A2734;
+  background-color: #1D1A27;
   border-radius: 1000px;
   width: max-content;
   text-decoration: none;
   text-transform: uppercase;
   font-size: larger;
+  color: #b7b4c7;
+}
+.backToIndex:active {
+  color: #fff;
 }
 
 .partners, .kontakty {
